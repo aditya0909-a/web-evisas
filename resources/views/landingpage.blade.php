@@ -103,65 +103,79 @@
 
 <!-- Hero Section -->
 <img src="{{ asset('icons/Bali.jpg') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
-<section class="w-full h-screen bg-center bg-cover text-white bg-[url('/icons/Bali.jpg')] bg-black mt-[-64px]">
-  <div class="w-full h-full bg-black/50 flex items-center pt-16">
-    <div class="max-w-7xl mx-auto py-40 px-6 text-center">
-      <h1 class="text-3xl md:text-5xl font-bold mb-2 md:mb-6">WELCOME TO EVISAS</h1>
-      <p class="text-2xl md:text-4xl text-blue-400 font-bold mb-2 md:mb-6">Indonesia Visa Center</p>
-      <p class="text-base md:text-2xl text-white font-semibold mb-2 md:mb-6">
+
+
+<section class="relative w-full h-screen text-white overflow-hidden mt-[-64px]">
+  <!-- Background Video -->
+ <video 
+    autoplay 
+    muted 
+    loop 
+    playsinline 
+    preload="auto"
+    poster="/images/ocean-preview.jpg"
+    class="absolute inset-0 w-full h-full object-cover z-0"
+    onloadeddata="this.style.opacity='1';"
+    style="opacity:-2; transition: opacity 0.2s ease-out;">
+    <source src="/icons/ocean.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+
+  <!-- Overlay (opsional) -->
+  <div class="absolute inset-0 bg-black/50 z-10"></div>
+
+  <!-- Content -->
+  <div class="relative z-20 flex items-center justify-center h-full px-6 text-center">
+    <div>
+      <h1 class="text-3xl md:text-5xl font-bold mb-4">WELCOME TO EVISAS</h1>
+      <p class="text-xl md:text-3xl text-blue-400 font-semibold mb-2">Indonesia Visa Center</p>
+      <p class="text-base md:text-xl text-white italic mb-2 md:mb-6">
         Fast. Simple. Free. Start your visa process with a quick consultation
       </p>
+      
+        <!-- Form -->
+        <div x-data="{ negara: '', tujuan: '', jenis: 'Turis' }"
+          class="flex flex-col md:flex-row justify-center items-center gap-4 ">
+          <!-- Negara -->
+          <div class="flex flex-col text-left w-full md:w-auto">
+            <label class="text-sm font-medium text-white mb-1">Citizen</label>
+            <input x-model="negara" type="text" placeholder="e.g. Indonesia"
+              class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
 
-      <div class="flex flex-wrap justify-center gap-4 text-sm mb-6">
-        <div class="flex items-center gap-2">
-          <img src="{{ asset('icons/Globe.png') }}" alt="Globe Icon" class="w-5 h-5">
-          <span>10+ Country</span>
-        </div>
-        <span class="text-white/50 hidden sm:inline">|</span>
-        <div class="flex items-center gap-2">
-          <img src="{{ asset('icons/Checklist.svg') }}" alt="Checklist Icon" class="w-5 h-5">
-          <span>99% Approval Rate</span>
-        </div>
-      </div>
+          <!-- Tujuan -->
+          <div class="flex flex-col text-left w-full md:w-auto">
+            <label class="text-sm font-medium text-white mb-1">Destination</label>
+            <input x-model="tujuan" type="text" placeholder="e.g. Netherlands"
+              class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
+          </div>
 
-      <!-- Form -->
-      <div x-data="{ negara: '', tujuan: '', jenis: 'Turis' }"
-        class="flex flex-col md:flex-row justify-center items-center gap-4">
-        <!-- Negara -->
-        <div class="flex flex-col text-left w-full md:w-auto">
-          <label class="text-sm font-medium text-white mb-1">Citizen</label>
-          <input x-model="negara" type="text" placeholder="e.g. Indonesia"
-            class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        </div>
+          <!-- Jenis Visa -->
+          <div class="flex flex-col text-left w-full md:w-auto">
+            <label class="text-sm font-medium text-white mb-1">Purpose</label>
+            <select x-model="jenis"
+              class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
+              <option>Tourism</option>
+              <option>Business</option>
+              <option>Education</option>
+            </select>
+          </div>
 
-        <!-- Tujuan -->
-        <div class="flex flex-col text-left w-full md:w-auto">
-          <label class="text-sm font-medium text-white mb-1">Destination</label>
-          <input x-model="tujuan" type="text" placeholder="e.g. Netherlands"
-            class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-        </div>
+          <!-- Tombol Konsultasi -->
+          <a :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hi\nI’m a ${negara} citizen. I plan to stay in ${tujuan} for ${jenis}.\nCould you please explain the visa requirements for this?`)"
+            target="_blank"
+            class="bg-blue-500 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-md mt-4 md:mt-6 md:self-end transition shadow-lg hover:shadow-xl">
+            Consult Now
+          </a>
 
-        <!-- Jenis Visa -->
-        <div class="flex flex-col text-left w-full md:w-auto">
-          <label class="text-sm font-medium text-white mb-1">Purpose</label>
-          <select x-model="jenis"
-            class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
-            <option>Tourism</option>
-            <option>Business</option>
-            <option>Education</option>
-          </select>
-        </div>
-
-        <!-- Tombol Konsultasi -->
-        <a :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hi\nI’m a ${negara} citizen. I plan to stay in ${tujuan} for ${jenis}.\nCould you please explain the visa requirements for this?`)"
-          target="_blank"
-          class="bg-blue-500 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-md mt-4 md:mt-6 md:self-end transition shadow-lg hover:shadow-xl">
-          Consult Now
+          <a href="https://wa.me/628113858165" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 p-3 rounded-full shadow-lg">
+          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6" alt="WhatsApp">
         </a>
-      </div>
+        </div>
     </div>
   </div>
 </section>
+
 
 
 <!-- Include Alpine.js -->
@@ -171,14 +185,14 @@
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
 <!-- Slider Container -->
-<div class="bg-gray-100 py-12 px-4 sm:px-6 lg:px-16 overflow-hidden" x-data="{ current: 0, slides: [0, 1, 2, 3, 4] }">
+<div class="bg-cover py-12 px-4 sm:px-6 lg:px-16 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')" x-data="{ current: 0, slides: [0, 1, 2, 3, 4] }">
   <h2 class="text-4xl text-center md:text-5xl font-bold text-gray-900 mb-4">
-    <span class="underline decoration-yellow-400 underline-offset-4">Why Choose Evisas?</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">Ours Services</span>
   </h2>
   <p class="text-lg text-center md:text-xl italic text-blue-700 mb-12">
-    We are the most trusted and established Visa agency in Bali.
+    Visa made easy, for every destination.
   </p>
-  <div class="relative w-full bg-white max-w-5xl mx-auto overflow-hidden">
+ <div class="relative w-full bg-white max-w-5xl mx-auto overflow-hidden rounded-2xl shadow-2xl">
 
     <!-- Inner slider -->
     <div class="flex transition-transform duration-700 ease-in-out"
@@ -186,7 +200,7 @@
 
       <!-- Slide 1 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <img src="{{ asset('images/visitor.jpeg') }}" alt="VisitorVisa" class="w-full md:max-w-md object-cover" />
+        <img src="{{ asset('images/visitor.svg') }}" alt="VisitorVisa" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 px-4 sm:px-8 lg:px-16">
           <h3 class="text-sm text-blue-600 font-bold mb-2">VISA SERVICES</h3>
           <h2 class="text-3xl font-bold mb-4">Visitor Visa</h2>
@@ -240,7 +254,7 @@
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <img src="{{ asset('images/ADDITIONAL.svg') }}" alt="Additional Services" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 pb-4 px-4 sm:px-8 lg:px-16">
-          <h3 class="pt-4 text-sm text-blue-600 font-bold mb-2">VISA SERVICES</h3>
+          <h3 class="text-sm pt-6  text-blue-600 font-bold mb-2">VISA SERVICES</h3>
           <h2 class="text-3xl font-bold mb-4">Additional Immigration Services</h2>
           <p class="text-gray-600 mb-4">
             We also provide translation, sponsorship, document processing, and immigration consulting services.
@@ -262,7 +276,7 @@
 <!-- Why Choose Evisas Section -->
 <section class="py-20 px-6 bg-[#e6f0ff] text-center">
   <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
-    <span class="underline decoration-yellow-400 underline-offset-4">Why Choose Evisas?</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">Why Choose Evisas?</span>
   </h2>
   <p class="text-lg md:text-xl italic text-blue-700 mb-12">
     We are the most trusted and established Visa agency in Bali.
@@ -275,7 +289,7 @@
         <img src="{{ asset('icons/personalized.svg') }}" alt="Personalized Service" class="w-7 h-7">
       </div>
       <h3 class="text-lg font-semibold text-gray-900">
-        <span class="underline decoration-yellow-400 decoration-2 underline-offset-4">Personalized</span> Service
+        <span class="underline decoration-yellow-500 decoration-2 underline-offset-4">Personalized</span> Service
       </h3>
     </div>
 
@@ -285,7 +299,7 @@
         <img src="{{ asset('icons/professional.svg') }}" alt="Professional Team" class="w-7 h-7">
       </div>
       <h3 class="text-lg font-semibold text-gray-900">
-        <span class="underline decoration-yellow-400 decoration-2 underline-offset-4">Highly experienced</span> & professional team
+        <span class="underline decoration-yellow-500 decoration-2 underline-offset-4">Highly experienced</span> & professional team
       </h3>
     </div>
 
@@ -295,7 +309,7 @@
         <img src="{{ asset('icons/locations.svg') }}" alt="Multiple Locations" class="w-7 h-7">
       </div>
       <h3 class="text-lg font-semibold text-gray-900">
-        <span class="underline decoration-yellow-400 decoration-2 underline-offset-4">Multiple Convenient</span> Locations
+        <span class="underline decoration-yellow-500 decoration-2 underline-offset-4">Multiple Convenient</span> Locations
       </h3>
     </div>
   </div>
@@ -318,7 +332,7 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-center">
     <h2 class="text-4xl md:text-5xl font-bold mb-4">
-      <span class="underline decoration-yellow-400 underline-offset-4">Our Easy Online Process</span>
+      <span class="underline decoration-yellow-500 underline-offset-4">Easy Online Process</span>
     </h2>
     <p class="text-lg italic text-white mb-12">
       Visa applications made easy, just the way they should be.
@@ -329,10 +343,10 @@
       
       <!-- Step 1 -->
       <div class="bg-white/70 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300 group text-gray-800 text-center">
-        <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center bg-white border border-blue-500 rounded-full shadow">
-          <img src="{{ asset('icons/step1.svg') }}" alt="Online Registration" class="w-10 h-10">
+        <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center">
+          <img src="{{ asset('icons/step1.png') }}" alt="Online Registration" class="w-20 h-20">
         </div>
-        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-yellow-400 underline-offset-4">
+        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-yellow-500 underline-offset-4">
           Online Registration
         </h3>
         <p class="text-sm">
@@ -342,10 +356,10 @@
 
       <!-- Step 2 -->
       <div class="bg-white/70 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300 group text-gray-800 text-center">
-        <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center bg-white border border-blue-500 rounded-full shadow">
-          <img src="{{ asset('icons/step2.svg') }}" alt="Processed by Our Team" class="w-10 h-10">
+        <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center">
+          <img src="{{ asset('icons/step2.png') }}" alt="Processed by Our Team" class="w-20 h-20">
         </div>
-        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-yellow-400 underline-offset-4">
+        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-orange-400 underline-offset-4">
           Processed by Our Team
         </h3>
         <p class="text-sm">
@@ -355,10 +369,10 @@
 
       <!-- Step 3 -->
       <div class="bg-white/70 backdrop-blur-md rounded-2xl p-8 shadow-lg hover:scale-105 transition-transform duration-300 group text-gray-800 text-center">
-        <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center bg-white border border-blue-500 rounded-full shadow">
-          <img src="{{ asset('icons/step3.svg') }}" alt="Enjoy Your Destination" class="w-10 h-10">
+        <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center">
+          <img src="{{ asset('icons/step3.png') }}" alt="Enjoy Your Destination" class="w-20 h-20">
         </div>
-        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-yellow-400 underline-offset-4">
+        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-orange-400 underline-offset-4">
           Enjoy Your Destination
         </h3>
         <p class="text-sm">
@@ -372,28 +386,31 @@
 
 <!-- Ulasan -->
 <section class="py-12 px-6 bg-white text-center">
-  <h2 class="text-3xl md:text-4xl font-bold mb-10">What They are Saying About Us</h2>
+  <h2 class="text-4xl md:text-5xl font-bold mb-4">
+      <span class="underline decoration-orange-400 underline-offset-4">What They Saying About Us</span>
+    </h2>
 
-  <div class="grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
+  <div class=" pt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">
 
     <!-- Testimoni 1 -->
-    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-      <img src="{{ asset('images/testi1.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover">
+    <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
+    <img src="{{ asset('images/testi1.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
+
     <!-- Testimoni 2 -->
-    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-      <img src="{{ asset('images/testi2.jpg') }}" alt="Review Screenshot 2" class="w-full h-auto object-cover">
+    <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
+    <img src="{{ asset('images/testi2.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
     <!-- Testimoni 3 -->
-    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-      <img src="{{ asset('images/testi3.jpg') }}" alt="Review Screenshot 3" class="w-full h-auto object-cover">
+    <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
+    <img src="{{ asset('images/testi3.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
     <!-- Testimoni 4 -->
-    <div class="bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden">
-      <img src="{{ asset('images/testi4.jpg') }}" alt="Review Screenshot 4" class="w-full h-auto object-cover">
+    <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
+    <img src="{{ asset('images/testi4.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
   </div>
@@ -456,9 +473,7 @@
 </footer>
 
 <!-- Floating WhatsApp -->
-<a href="https://wa.me/628113858165" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 p-3 rounded-full shadow-lg">
-  <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6" alt="WhatsApp">
-</a>
+
 
 </body>
 </html>
