@@ -20,19 +20,18 @@
   <!-- Header -->
 <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
-  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-12">
 
     <!-- Logo -->
     <div class="flex items-center gap-3">
-  <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Logo" class="w-10 h-10">
-  <span class="text-xl md:text-2xl font-bold text-white tracking-tight">EVISAS</span>
-  </div>
-
+      <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Logo" class="w-10 h-10">
+      <span class="text-xl md:text-2xl font-bold text-white tracking-tight">EVISAS</span>
+    </div>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
-      <a href="/landingpage/companyprofile" class="text-white hover:text-blue-400 transition-colors">
-        About Us
+      <a href="/" class="text-white hover:text-blue-400 transition-colors">
+        Home
       </a>
 
       <!-- Dropdown -->
@@ -45,16 +44,16 @@
         </button>
         <div x-show="serviceOpen" x-transition
              class="absolute left-0 mt-3 w-60 bg-[#334155] border border-blue-800 shadow-lg rounded-lg z-50 overflow-hidden">
-          <a href="#" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visa & Kitas Extension</a>
-          <a href="#" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAS</a>
-          <a href="#" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAP</a>
-          <a href="#" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visitor Visa</a>
-          <a href="#" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Additional Immigration Services</a>
+          <a href="/landingpage/extention" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visa & Kitas Extension</a>
+          <a href="/landingpage/kitas" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAS</a>
+          <a href="/landingpage/kitap" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAP</a>
+          <a href="/landingpage/visitorvisa" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visitor Visa</a>
+          <a href="/landingpage/additional" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Additional Immigration Services</a>
         </div>
       </div>
 
-      <a href="#" class="text-white hover:text-blue-400 transition-colors">
-        Why Evisas
+      <a href="/landingpage/companyprofile" class="text-white hover:text-blue-400 transition-colors">
+        About Us
       </a>
     </nav>
 
@@ -74,7 +73,7 @@
       <!-- Mobile Menu -->
       <div x-show="navOpen" x-cloak x-transition
            class="absolute right-0 mt-3 w-64 bg-[#334155] shadow-xl rounded-lg py-4 px-5 z-50 text-sm space-y-3 border border-blue-800">
-        <a href="/landingpage/companyprofile" class="block text-white hover:text-blue-400">About Us</a>
+        <a href="/" class="block text-white hover:text-blue-400">Home</a>
 
         <!-- Mobile Dropdown -->
         <div>
@@ -87,19 +86,20 @@
             </svg>
           </button>
           <div x-show="mobileServiceOpen" x-transition class="pl-4 mt-2 space-y-2">
-            <a href="#" class="block text-white hover:text-blue-400">Visa & Kitas Extension</a>
-            <a href="#" class="block text-white hover:text-blue-400">KITAS</a>
-            <a href="#" class="block text-white hover:text-blue-400">KITAP</a>
-            <a href="#" class="block text-white hover:text-blue-400">Visitor Visa</a>
-            <a href="#" class="block text-white hover:text-blue-400">Additional Immigration Services</a>
+            <a href="/landingpage/extention" class="block text-white hover:text-blue-400">Visa & Kitas Extension</a>
+            <a href="/landingpage/kitas" class="block text-white hover:text-blue-400">KITAS</a>
+            <a href="/landingpage/kitap" class="block text-white hover:text-blue-400">KITAP</a>
+            <a href="/landingpage/visitorvisa" class="block text-white hover:text-blue-400">Visitor Visa</a>
+            <a href="/landingpage/additional" class="block text-white hover:text-blue-400">Additional Immigration Services</a>
           </div>
         </div>
 
-        <a href="#" class="block text-white hover:text-blue-400 transition">Why Evisas</a>
+        <a href="/landingpage/companyprofile" class="block text-white hover:text-blue-400">About Us</a>
       </div>
     </div>
   </div>
 </header>
+
 
 <!-- Hero Section -->
 <img src="{{ asset('icons/Bali.jpg') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
@@ -176,11 +176,6 @@
   </div>
 </section>
 
-
-
-<!-- Include Alpine.js -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
 <!-- Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
@@ -201,23 +196,23 @@
       <!-- Slide 1 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <img src="{{ asset('images/visitor.svg') }}" alt="VisitorVisa" class="w-full md:max-w-md object-cover" />
-        <div class="w-full md:w-1/2 px-4 sm:px-8 lg:px-16">
-          <h3 class="text-sm text-blue-600 font-bold mb-2">VISA SERVICES</h3>
-          <h2 class="text-3xl font-bold mb-4">Visitor Visa</h2>
-          <p class="text-gray-600 mb-4">
+        <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
+          <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
+          <h2 class="text-3xl font-bold mb-2">Visitor Visa</h2>
+          <p class="text-gray-600 mb-2">
             A Visitor Visa is granted to foreign nationals for short-term stays such as tourism, family visits, or business meetings.
           </p>
-          <a href="/visitor-visa" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/landingpage/visitorvisa" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 
       <!-- Slide 2 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <img src="{{ asset('images/KITAS.svg') }}" alt="KITAS" class="w-full md:max-w-md object-cover" />
-        <div class="w-full md:w-1/2 px-4 sm:px-8 lg:px-16">
-          <h3 class="text-sm text-blue-600 font-bold mb-2">VISA SERVICES</h3>
-          <h2 class="text-3xl font-bold mb-4">KITAS</h2>
-          <p class="text-gray-600 mb-4">
+        <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
+          <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
+          <h2 class="text-3xl font-bold mb-2">KITAS</h2>
+          <p class="text-gray-600 mb-2">
             KITAS is a Limited Stay Permit for foreigners who wish to work, retire, or invest in Indonesia.
           </p>
           <a href="/kitas" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
@@ -227,10 +222,10 @@
       <!-- Slide 3 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <img src="{{ asset('images/KITAP.svg') }}" alt="KITAP" class="w-full md:max-w-md object-cover" />
-        <div class="w-full md:w-1/2 px-4 sm:px-8 lg:px-16">
-          <h3 class="text-sm text-blue-600 font-bold mb-2">VISA SERVICES</h3>
-          <h2 class="text-3xl font-bold mb-4">KITAP</h2>
-          <p class="text-gray-600 mb-4">
+        <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
+          <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
+          <h2 class="text-3xl font-bold mb-2">KITAP</h2>
+          <p class="text-gray-600 mb-2">
             KITAP is a Permanent Stay Permit for foreigners who have held a KITAS for several years.
           </p>
           <a href="/kitap" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
@@ -240,10 +235,10 @@
       <!-- Slide 4 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <img src="{{ asset('images/EXTENTION.svg') }}" alt="Visa Extension" class="w-full md:max-w-md object-cover" />
-        <div class="w-full md:w-1/2 px-4 sm:px-8 lg:px-16 ">
-          <h3 class="text-sm text-blue-600 font-bold mb-2">VISA SERVICES</h3>
-          <h2 class="text-3xl font-bold mb-4">Visa Extension</h2>
-          <p class="text-gray-600 mb-4">
+        <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
+          <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
+          <h2 class="text-3xl font-bold mb-2">Visa Extension</h2>
+          <p class="text-gray-600 mb-2">
             Visa Extension allows foreigners to prolong their legal stay without leaving the country.
           </p>
           <a href="/visa-extension" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
@@ -253,13 +248,14 @@
       <!-- Slide 5 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
         <img src="{{ asset('images/ADDITIONAL.svg') }}" alt="Additional Services" class="w-full md:max-w-md object-cover" />
-        <div class="w-full md:w-1/2 pb-4 px-4 sm:px-8 lg:px-16">
-          <h3 class="text-sm pt-6  text-blue-600 font-bold mb-2">VISA SERVICES</h3>
-          <h2 class="text-3xl font-bold mb-4">Additional Immigration Services</h2>
-          <p class="text-gray-600 mb-4">
+        <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
+
+          <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
+          <h2 class="text-3xl font-bold mb-2">Additional Immigration Services</h2>
+          <p class="text-gray-600 mb-2">
             We also provide translation, sponsorship, document processing, and immigration consulting services.
           </p>
-          <a href="/additional-services" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/additional-services" class="inline-block mt-2 pb-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 
@@ -274,51 +270,42 @@
 </div>
 
 <!-- Why Choose Evisas Section -->
-<section class="py-20 px-6 bg-[#e6f0ff] text-center">
+<section class="py-24 px-6 bg-gradient-to-br from-blue-50 to-[#e6f0ff] text-center">
   <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
     <span class="underline decoration-yellow-500 underline-offset-4">Why Choose Evisas?</span>
   </h2>
-  <p class="text-lg md:text-xl italic text-blue-700 mb-12">
-    We are the most trusted and established Visa agency in Bali.
+  <p class="text-lg md:text-xl text-blue-800 mb-14 max-w-3xl mx-auto">
+    We are the most trusted and experienced visa agency in Bali, delivering fast and reliable services to travelers from around the world.
   </p>
 
-  <div class="max-w-7xl mx-auto grid md:grid-cols-3 gap-8 mb-16">
-    <!-- Feature Card 1 -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300 group">
-      <div class="w-16 h-16 border-2 border-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110">
-        <img src="{{ asset('icons/personalized.svg') }}" alt="Personalized Service" class="w-7 h-7">
+  <div class="max-w-6xl mx-auto grid gap-10 md:grid-cols-3">
+    <!-- Feature Card -->
+    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col items-center text-center">
+      <div class="bg-yellow-100 rounded-full p-4 mb-6 transition-transform group-hover:scale-110">
+        <img src="{{ asset('icons/Trusted.png') }}" alt="Trusted" class="w-16 h-16">
       </div>
-      <h3 class="text-lg font-semibold text-gray-900">
-        <span class="underline decoration-yellow-500 decoration-2 underline-offset-4">Personalized</span> Service
-      </h3>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Trusted Local Experts</h3>
+      <p class="text-gray-600 text-sm">With in-depth knowledge of Bali’s visa regulations, our team ensures a smooth and compliant process for you.</p>
     </div>
 
-    <!-- Feature Card 2 -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300 group">
-      <div class="w-16 h-16 border-2 border-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110">
-        <img src="{{ asset('icons/professional.svg') }}" alt="Professional Team" class="w-7 h-7">
+    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col items-center text-center">
+      <div class="bg-yellow-100 rounded-full p-4 mb-6 transition-transform group-hover:scale-110">
+        <img src="{{ asset('icons/Fast.png') }}" alt="Fast" class="w-16 h-16">
       </div>
-      <h3 class="text-lg font-semibold text-gray-900">
-        <span class="underline decoration-yellow-500 decoration-2 underline-offset-4">Highly experienced</span> & professional team
-      </h3>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">Fast & Transparent Service</h3>
+      <p class="text-gray-600 text-sm">We keep you informed every step of the way with quick processing and no hidden surprises.</p>
     </div>
 
-    <!-- Feature Card 3 -->
-    <div class="bg-white shadow-md rounded-xl p-6 hover:shadow-xl transition-shadow duration-300 group">
-      <div class="w-16 h-16 border-2 border-blue-500 rounded-full flex items-center justify-center mx-auto mb-4 transition-transform group-hover:scale-110">
-        <img src="{{ asset('icons/locations.svg') }}" alt="Multiple Locations" class="w-7 h-7">
+    <div class="bg-white rounded-2xl p-8 shadow-md hover:shadow-2xl transition-all duration-300 group flex flex-col items-center text-center">
+      <div class="bg-yellow-100 rounded-full p-4 mb-6 transition-transform group-hover:scale-110">
+        <img src="{{ asset('icons/One-Stop.png') }}" alt="One-Stop" class="w-16 h-16">
       </div>
-      <h3 class="text-lg font-semibold text-gray-900">
-        <span class="underline decoration-yellow-500 decoration-2 underline-offset-4">Multiple Convenient</span> Locations
-      </h3>
+      <h3 class="text-xl font-semibold text-gray-900 mb-2">One-Stop Visa Solutions</h3>
+      <p class="text-gray-600 text-sm">From tourist visas to long-term stays, we handle it all so you can focus on enjoying Bali.</p>
     </div>
-  </div>
-
-  <!-- Image Section -->
-  <div class="max-w-4xl mx-auto">
-    <img src="{{ asset('images/evisas-team.jpg') }}" alt="Evisas Team" class="rounded-xl shadow-xl transition-transform hover:scale-105 duration-300">
   </div>
 </section>
+
 
 
 
@@ -359,7 +346,7 @@
         <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center">
           <img src="{{ asset('icons/step2.png') }}" alt="Processed by Our Team" class="w-20 h-20">
         </div>
-        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-orange-400 underline-offset-4">
+        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-yellow-500 underline-offset-4">
           Processed by Our Team
         </h3>
         <p class="text-sm">
@@ -372,7 +359,7 @@
         <div class="w-20 h-20 mb-4 mx-auto flex items-center justify-center">
           <img src="{{ asset('icons/step3.png') }}" alt="Enjoy Your Destination" class="w-20 h-20">
         </div>
-        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-orange-400 underline-offset-4">
+        <h3 class="text-lg font-bold text-blue-700 mb-1 group-hover:underline decoration-yellow-500 underline-offset-4">
           Enjoy Your Destination
         </h3>
         <p class="text-sm">
@@ -387,7 +374,7 @@
 <!-- Ulasan -->
 <section class="py-12 px-6 bg-white text-center">
   <h2 class="text-4xl md:text-5xl font-bold mb-4">
-      <span class="underline decoration-orange-400 underline-offset-4">What They Saying About Us</span>
+      <span class="underline decoration-yellow-500 underline-offset-4">What They Saying About Us</span>
     </h2>
 
   <div class=" pt-6 grid grid-cols-1 sm:grid-cols-2 md:grid-cols-4 gap-6 max-w-7xl mx-auto">

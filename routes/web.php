@@ -20,3 +20,15 @@ Route::get('/', function () {
 Route::get('/landingpage/companyprofile', function () {
     return view('companyprofile');
 });
+
+Route::get('/landingpage/visitorvisa', function () {
+    return view('visitorvisa');
+});
+
+Route::get('/landingpage/visitorvisa/voa', function () {
+    return view('voa');
+});
+
+Route::get('/landingpage/visitorvisa/singleentry', function () {
+    return view('singleentry');
+});
