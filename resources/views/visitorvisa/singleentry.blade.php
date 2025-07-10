@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - About Us</title>
+  <title>Evisas - Single Entry Visitor Visa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
@@ -132,12 +132,12 @@
         <p class="text-sm mb-4"><strong>IDR 3,500,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a href="/landingpage/visitorvisa/singleentry/C1" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
         :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C1 - Tourist Visa.\nCould you please assist me with the application process? Thank you!`)"
         target="_blank"
         class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-        Apply Now
+        Apply
         </a>
     </div>
     </div>
@@ -151,12 +151,12 @@
         <p class="text-sm mb-4"><strong>IDR 4,750,000</strong> - Priority</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a href="/landingpage/visitorvisa/singleentry/C2" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
         :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C2 - Business Visa.\nCould you please assist me with the application process? Thank you!`)"
         target="_blank"
         class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-        Apply Now
+        Apply
         </a>
     </div>
     </div>
@@ -170,8 +170,13 @@
         <p class="text-sm mb-4"><strong>IDR 4,750,000</strong> - Priority</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C6" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C6 - Social & Volunteer.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -183,8 +188,13 @@
         <p class="text-sm mb-4"><strong>IDR 4,000,000</strong> - Priority only</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C7A" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C7A - Music Performer.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -196,8 +206,13 @@
         <p class="text-sm mb-4"><strong>IDR 4,000,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C7C" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C7C - General Art Performer.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -210,8 +225,13 @@
         <p class="text-sm mb-4"><strong>IDR 4,750,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C9" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C9 - Short Course.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -224,8 +244,13 @@
         <p class="text-sm mb-4"><strong>IDR 4,750,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C10" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C10 - Event Participant.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -238,8 +263,13 @@
         <p class="text-sm mb-4"><strong>IDR 7,500,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C12" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C12 - Pre-Investment.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -252,8 +282,13 @@
         <p class="text-sm mb-4"><strong>IDR 7,000,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C18" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C18 - Work Trial.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 
@@ -266,8 +301,13 @@
         <p class="text-sm mb-4"><strong>IDR 7,500,000</strong> - Priority (5 days)</p>
     </div>
     <div class="flex gap-2 mt-2">
-        <a href="#" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a href="#" class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">Apply</a>
+        <a href="/landingpage/visitorvisa/singleentry/C22B" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the >C22B - Internship.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
     </div>
     </div>
 

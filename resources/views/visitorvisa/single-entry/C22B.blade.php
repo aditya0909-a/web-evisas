@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - Visitor Visa</title>
+  <title>Evisas - C22B - Single Entry Internship Visa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
@@ -15,7 +15,11 @@
   </style>
 </head>
 
-<body class="bg-black text-gray-800">
+<body class="bg-[#f5fafd] text-gray-800">
+
+  <!-- Alpine.js -->
+<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
+
   <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-12">
@@ -99,7 +103,7 @@
 </header>
 
 <img src="{{ asset('images/rock.jpg') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
-<section class="py-20 px-6 bg-[url('/images/rock.jpg')] bg-cover bg-center text-white relative mt-[-64px] min-h-[250px]"">
+<section class="py-20 px-6 bg-[url('/images/rock.jpg')] bg-cover bg-center text-white relative mt-[-64px] min-h-[250px]">
 
   <!-- Overlay semi-transparan gelap -->
   <div class="absolute inset-0 bg-black/50"></div>
@@ -107,107 +111,94 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
   <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Visitor Visa</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">C22B - Single Entry Internship Visa</span>
   </h2>
 </div>
-
 </section>
 
 <div class="bg-[#021d3a] text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
     <a href="/" class="hover:underline text-blue-600">Home</a> › 
-    <span>Visitor Visa</span>
+    <a href="/landingpage/visitorvisa" class="hover:underline text-blue-600">Visitor Visa</a> ›
+    <a href="/landingpage/visitorvisa/singleentry" class="hover:underline text-blue-600">Single Entry</a> › 
+    <span>C22B - Single Entry Internship Visa</span>
   </div>
 </div>
-  
-<section class="relative bg-white text-gray-800 overflow-hidden">
-  <!-- Background pattern -->
-  <div class="absolute inset-0 bg-[url('/images/patternocean.png')] bg-no-repeat bg-center opacity-50 pointer-events-none"></div>
 
-  <!-- Main Content -->
-  <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 items-center">
-    <!-- Image -->
-    <img src="{{ asset('images/voa.png') }}" alt="Plane Window View" class="rounded-lg shadow-xl">
-
-    <!-- Text Content -->
-    <div>
-      <h1 class="text-4xl font-bold mb-4 text-[#1e293b]">E - Visa VOA</h1>
-      <p class="text-blue-600 italic text-lg mb-4">For short-term stays up to 60 days.</p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Visa on Arrival (VOA) is a single-entry visa valid for 30 days, including the day of arrival. 
-        It can be extended once for an additional 30 days, allowing a total stay of up to 60 days. This visa is available for citizens of eligible countries.
+<div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')">
+  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+    <!-- Section: C22B - Single Entry Internship Visa (B211) -->
+    <div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
+      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">C22B - Single Entry Internship Visa (B211)</h2>
+      <p class="text-sm text-gray-600 mb-4">
+        This visa is intended for those seeking an internship to learn and develop their skills at an Indonesian company, or workplace. It allows you to stay for up to 180 days and is extendable for an additional 180 days.
       </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Valid for Tourism and certain short-term visits</li>
-        <li>Simple and fast processing</li>
-      </ul>
 
-      <!-- Buttons -->
-      <div class="flex gap-4">
-        <a href="/landingpage/visitorvisa/voa" class="px-6 py-3 bg-white border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Get Details</a>
+      <div class="mb-4">
+        <h3 class="font-semibold">Price</h3>
+        <p><strong>IDR 6,000,000</strong> - Regular <span class="text-gray-500">14 business days processing time</span></p>
+        <p><strong>IDR 7,500,000</strong> - Priority <span class="text-gray-500">5 business days processing time</span></p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Length of Stay</h3>
+        <p>180 days MAX. (extendable ×1, 360 days MAX).</p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">With this visa, you <span class="text-green-600">CAN</span>:</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Carry out activities related to an internship to develop skills and talents at an Indonesian company, or workplace.</li>
+          <li>Conduct activities related to tourism, and visiting friends or family.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">With this visa, you <span class="text-red-600">CANNOT</span>:</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Perform PAID work.</li>
+          <li>Exit and re-enter Indonesia.</li>
+          <li>Stay in Indonesia after your visa expires.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Visa Validity</h3>
+        <p>This visa must be used within 90 days from the date of issue.</p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Document Requirements</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Passport that is valid for at least 6 (six) months from entry date.</li>
+          <li>A recent colour photograph.</li>
+          <li>A personal bank statement showing a minimum equivalent amount of USD $5000 for a stay up to 180 days. The statement must cover the last 3 months and include your name, the date, and the account balance.</li>
+          <li>Apprenticeship agreement letter or statement from the government agency or private institution as the activity organizer.</li>
+          <li>Sponsor Document.</li>
+          <li>A birth certificate for a child under 18 years old.</li>
+        </ul>
+      </div>
+
+      <div class="flex gap-2 mt-4">
+        <a x-data
+          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the C22B - Single Entry Internship Visa (B211).\nCould you please assist me with the application process? Thank you!`)"
+          target="_blank"
+          class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+          Apply Now
+        </a>
       </div>
     </div>
-  </div>
-</section>
 
-<section class="bg-gradient-to-br from-blue-50 to-[#e6f0ff]">
-    <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 items-center">
-    <!-- Image -->
-    <img src="{{ asset('images/single-entry.png') }}" alt="Plane Window View" class="rounded-lg shadow-xl">
-
-    <!-- Text Content -->
-    <div>
-      <h1 class="text-4xl font-bold mb-4 text-[#1e293b]">Single Entry Visitor Visa</h1>
-      <p class="text-blue-600 italic text-lg mb-4">For tourism, business, social or volunteer visits up to 180 days.</p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        A Single Entry Visit Visa permits a single entry, meaning once you leave the country,
-        a new visa will be required for re-entry. Depending on the type, a stay of 60 to 180 days is permitted.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Can be extended twice (each 60 days)</li>
-        <li>Valid for Tourism, Business, Social, Humanitarian or Music Activities</li>
-        <li>Fast processing available</li>
+    <div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
+      <h4 class="font-semibold mb-2">NOTE:</h4>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Please be aware that international bank transfers can take up to 5 business days to clear in Bali.</li>
+        <li>Business days do not include public holidays or weekends.</li>
+        <li>Processing of your application will commence only after the funds have successfully cleared into our account.</li>
       </ul>
-
-      <!-- Buttons -->
-      <div class="flex gap-4">
-        <a href="/landingpage/visitorvisa/singleentry" class="px-6 py-3 bg-white border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Get Details</a>
-      </div>
     </div>
   </div>
-</section>
-
-<section class="relative bg-white text-gray-800 overflow-hidden">
-  <!-- Background pattern -->
-  <div class="absolute inset-0 bg-[url('/images/patternocean.png')] bg-no-repeat bg-center opacity-50 pointer-events-none"></div>
-  <!-- Main Content -->
-  <div class="max-w-6xl mx-auto px-6 py-10 grid grid-cols-1 md:grid-cols-2 gap-12 relative z-10 items-center">
-    <!-- Image -->
-    <img src="{{ asset('images/multiple-entry.png') }}" alt="Plane Window View" class="rounded-lg shadow-xl">
-
-    <!-- Text Content -->
-    <div>
-      <h1 class="text-4xl font-bold mb-4 text-[#1e293b]">Multiple Entry Visitor Visa</h1>
-      <p class="text-blue-600 italic text-lg mb-4">For tourism, business, invesment up to 180 days.</p>
-      <p class="text-gray-700 mb-4 leading-relaxed">
-        Multiple entry visas are available for 1, 2 or 5 years. 
-        Periods of stay for this visa allow either 60 days per visit (but can be extended twice) OR 180 days per visit (but can be extended once). With a multi entry visa, you may exit and re-enter the country under the same visa.
-      </p>
-      <ul class="list-disc list-inside text-gray-700 mb-6">
-        <li>Can be extended twice (each 60 days)</li>
-        <li>Valid for Tourism, Business, Invesment.</li>
-        <li>Re-enter the country under the same visa.</li>
-        <li>Fast processing available</li>
-      </ul>
-
-      <!-- Buttons -->
-      <div class="flex gap-4">
-        <a href="/landingpage/visitorvisa/multipleentry" class="px-6 py-3 bg-white border border-blue-600 text-blue-600 rounded-lg hover:bg-blue-50 transition">Get Details</a>
-      </div>
-    </div>
-  </div>
-</section>
-
+</div>
 
   <!-- Footer -->
   <footer class="bg-[#021d3a] text-white py-10">

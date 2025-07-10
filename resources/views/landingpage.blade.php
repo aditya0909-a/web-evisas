@@ -215,7 +215,7 @@
           <p class="text-gray-600 mb-2">
             KITAS is a Limited Stay Permit for foreigners who wish to work, retire, or invest in Indonesia.
           </p>
-          <a href="/kitas" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/landingpage/kitas" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 

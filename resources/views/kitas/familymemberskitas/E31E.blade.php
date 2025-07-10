@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - About Us</title>
+  <title>Evisas - E31E - Child of KITAS holder</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
@@ -111,100 +111,133 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
   <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Visa on Arrival (VOA)</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">E31E - Child of KITAS holder</span>
   </h2>
 </div>
 </section>
 
 <div class="bg-[#021d3a] text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
-    <a href="/" class="hover:underline text-blue-600">Home</a> › 
-    <a href="/landingpage/visitorvisa" class="hover:underline text-blue-600">Visitor Visa</a> › 
-    <span>Visa on Arrival (VOA)</span>
+    <a href="/" class="hover:underline text-left text-blue-600">Home</a> ›
+    <a href="/landingpage/kitas" class="hover:underline text-left text-blue-600">KITAS</a> ›
+    <a href="/landingpage/kitas/familymemberskitas" class="hover:underline text-left text-blue-600">Family Members Kitas Holders</a> ›  
+    <span>E31E - Child of KITAS holder</span>
   </div>
 </div>
 
 <div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-    <!-- Section: B1 - Holiday E-Visa VOA -->
-<div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
-  <h2 class="text-2xl font-bold text-[#1e293b] mb-2">B1 - Holiday E-Visa VOA</h2>
-  <p class="text-sm text-gray-600 mb-4">
-    Available for citizens from one of the <a href="#" class="text-blue-600 underline">VOA eligible countries</a> and who will be visiting Indonesia for holiday and tourism purposes.
-  </p>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">Price</h3>
-    <p><strong>IDR 750,000</strong></p>
-  </div>
+    <!-- Section: E31E - Child of KITAS holder -->
+    <div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
+      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">E31E - Child of KITAS holder</h2>
+      <p class="text-sm text-gray-600 mb-4">
+        This visa is for the dependent child (under 18 years old) of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder.
+      </p>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">Length of Stay</h3>
-    <p>30 days (extendable ×1, 30 days MAX). 
-      <a href="#" class="text-blue-600 underline">Please click here for detailed information on extension.</a>
-    </p>
-  </div>
+      <div class="mb-4">
+        <h3 class="font-semibold">Price</h3>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">Processing Time</h3>
-    <p>1 business day 
-      <em class="text-gray-500">(during our office hours Monday–Friday at 09.00–17.00 Bali time)</em>
-    </p>
-  </div>
+        <p class="text-sm font-medium text-gray-700 underline">Applying from OUTSIDE Indonesia</p>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">With this visa, you <span class="text-green-600">CAN</span>:</h3>
-    <ul class="list-disc pl-6 text-sm text-gray-700">
-      <li>Conduct activities related to tourism, and visiting friends or family.</li>
-      <li>Participate in meetings, incentives, conventions, and exhibitions as an attendee.</li>
-    </ul>
-  </div>
+        <p><strong>1 year visa</strong></p>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>IDR 13,500,000 – Regular 14 business days processing time</li>
+          <li>IDR 15,000,000 – Priority 7 business days processing time</li>
+        </ul>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">With this visa, you <span class="text-red-600">CANNOT</span>:</h3>
-    <ul class="list-disc pl-6 text-sm text-gray-700">
-      <li>Perform <strong>PAID</strong> work.</li>
-      <li>Exit and re-enter Indonesia.</li>
-      <li>Stay in Indonesia after your visa expires.</li>
-    </ul>
-  </div>
+        <p><strong>2 years visa</strong></p>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>IDR 16,500,000 – Regular 14 business days processing time</li>
+          <li>IDR 18,000,000 – Priority 7 business days processing time</li>
+        </ul>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">Visa Validity</h3>
-    <p>This visa must be used within 90 days from the date of issue.</p>
-  </div>
+        <p class="text-sm font-medium text-gray-700 underline mt-3">Applying from WITHIN Indonesia</p>
 
-  <div class="mb-4">
-    <h3 class="font-semibold">Document Requirements</h3>
-    <ul class="list-disc pl-6 text-sm text-gray-700">
-      <li>Passport valid for at least 6 (six) months from entry date.</li>
-      <li>A recent colour photograph.</li>
-    </ul>
-  </div>
+        <p><strong>6 months visa</strong></p>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>IDR 13,500,000 – Regular 14 business days processing time</li>
+          <li>IDR 16,000,000 – Priority 7 business days processing time</li>
+        </ul>
 
-  <!-- Buttons -->
-  <div class="flex gap-3 mt-6">
-    <a x-data
-   :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the B1 - Holiday E-Visa VOA.\nCould you please assist me with the application process? Thank you!`)"
-   target="_blank"
-   class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-   Apply Now
-    </a>
+        <p><strong>1 year visa</strong></p>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>IDR 16,000,000 – Regular 14 business days processing time</li>
+          <li>IDR 19,000,000 – Priority 7 business days processing time</li>
+        </ul>
+
+        <p><strong>2 years visa</strong></p>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>IDR 20,000,000 – Regular 14 business days processing time</li>
+          <li>IDR 23,000,000 – Priority 7 business days processing time</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Length of Stay</h3>
+        <p>6 months, 1 year, 2 years, 5 years or 10 years</p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">With this visa, you <span class="text-green-600">CAN</span>:</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Live in Indonesia.</li>
+          <li>Travel to and from Indonesia as many times you want.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">With this visa, you <span class="text-red-600">CANNOT</span>:</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Stay in Indonesia after your visa expires.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Visa Validity</h3>
+        <p>This visa must be used within 90 days from the date of issue.</p>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Document Requirements</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Passport that is valid for at least 6 (six) months.</li>
+          <li>A recent color photograph.</li>
+          <li>A personal bank statement showing a minimum equivalent amount of USD $2000. The statement must cover the last 3 months and include your name, the date, and the account balance.</li>
+          <li>Birth certificate translated into Indonesian by a sworn translator.</li>
+          <li>Marriage book or parent’s marriage certificate translated into Indonesian.</li>
+          <li>Stay Permit (ITAS)/Permanent Stay Permit (ITAP) of the parents.</li>
+          <li>Proof of medical condition or proof of guardianship translated into Indonesian by a sworn translator <span class="text-xs text-gray-500">(specifically for individuals 18+ years old with humanitarian/health considerations)</span>.</li>
+        </ul>
+      </div>
+
+      <div class="mb-4">
+        <h3 class="font-semibold">Additional document required for applicant applying from WITHIN Indonesia</h3>
+        <p>Single entry or Multiple entry E-Visa</p>
+      </div>
+
+      <div class="flex gap-2 mt-4">
+        <a x-data
+          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the E31E - Child of KITAS holder.\nCould you please assist me with the application process? Thank you!`)"
+          target="_blank"
+          class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+          Apply Now
+        </a>
+      </div>
+    </div>
+
+    <div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
+      <h4 class="font-semibold mb-2">NOTE:</h4>
+      <ul class="list-disc pl-6 space-y-1">
+        <li>Please be aware that international bank transfers can take up to 5 business days to clear in Bali.</li>
+        <li>Business days do not include public holidays or weekends.</li>
+        <li>Processing starts only after the funds are successfully cleared into our account.</li>
+      </ul>
+    </div>
   </div>
 </div>
 
-<!-- Notes Section -->
-<div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
-  <h4 class="font-semibold mb-2">NOTE:</h4>
-  <ul class="list-disc pl-6 space-y-1">
-    <li>Please be aware that international bank transfers can take up to 5 business days to clear in Bali.</li>
-    <li>Business days do not include public holidays or weekends.</li>
-    <li>Processing starts only after the funds are successfully cleared into our account.</li>
-  </ul>
-</div>
 
-  </div>
-</div>
 
 
   <!-- Footer -->
