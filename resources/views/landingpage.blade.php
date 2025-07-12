@@ -227,7 +227,7 @@
           <p class="text-gray-600 mb-2">
             KITAP is a Permanent Stay Permit for foreigners who have held a KITAS for several years.
           </p>
-          <a href="/kitap" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/landingpage/kitap" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 
@@ -240,7 +240,7 @@
           <p class="text-gray-600 mb-2">
             Visa Extension allows foreigners to prolong their legal stay without leaving the country.
           </p>
-          <a href="/visa-extension" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/landingpage/extention" class="inline-block mt-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 
@@ -254,7 +254,7 @@
           <p class="text-gray-600 mb-2">
             We also provide translation, sponsorship, document processing, and immigration consulting services.
           </p>
-          <a href="/additional-services" class="inline-block mt-2 pb-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/landingpage/additional-services" class="inline-block mt-2 pb-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 

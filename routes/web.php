@@ -188,3 +188,27 @@ Route::get('/landingpage/kitas/goldenkitas/globaltalent', function () {
 Route::get('/landingpage/kitas/goldenkitas/goldeninvestors', function () {
     return view('kitas.goldenkitas.goldeninvestors');
 });
+
+Route::get('/landingpage/kitap', function () {
+    return view('kitap');
+});
+
+Route::get('/landingpage/kitap/investorkitap', function () {
+    return view('kitap.investorkitap');
+});
+
+Route::get('/landingpage/kitap/familykitap', function () {
+    return view('kitap.familykitap');
+});
+
+Route::get('/landingpage/kitap/workingkitap', function () {
+    return view('kitap.workingkitap');
+});
+
+Route::get('/landingpage/kitap/retirementkitap', function () {
+    return view('kitap.retirementkitap');
+});
+
+Route::get('/landingpage/extention', function () {
+    return view('extention');
+});

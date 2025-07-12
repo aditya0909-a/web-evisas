@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - Global Talent (E33 A/B)</title>
+  <title>Evisas - Family Kitap</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
@@ -111,101 +111,71 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
   <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Global Talent (E33 A/B)</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">Family Kitap</span>
   </h2>
 </div>
 </section>
 
 <div class="bg-[#021d3a] text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
-    <a href="/" class="hover:underline text-left text-blue-600">Home</a> ›
-    <a href="/landingpage/kitas" class="hover:underline text-left text-blue-600">KITAS</a> ›
-    <a href="/landingpage/kitas/goldenkitas" class="hover:underline text-left text-blue-600">Golden Visas</a> ›  
-    <span>Global Talent (E33 A/B)</span>
+    <a href="/" class="hover:underline text-blue-600">Home</a> › 
+    <a href="/landingpage/kitap" class="hover:underline text-blue-600">KITAP</a> ›
+    <span>Family Kitap</span>
   </div>
 </div>
 
 <div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
 
-    <!-- Section: Global Talent (E33 A/B) -->
+    <!-- Section: Family Kitap -->
     <div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
-      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">Global Talent (E33 A/B)</h2>
-      <p class="text-sm text-gray-600 mb-4">
-        The Global Talent Visa Indonesia is designed to attract skilled individuals from abroad to contribute in Indonesia. It aims to enhance the country's competitiveness by bringing in global talents to support various economic and industrial sectors.
-      </p>
+      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">Family Kitap</h2>
 
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>5 years:</strong> IDR 25,000,000 – 60 business days processing time</li>
-          <li><strong>10 years:</strong> IDR 35,000,000 – 60 business days processing time</li>
-        </ul>
+        <p class="text-sm text-gray-700 mb-1"><strong>IDR 40,000,000 Regular</strong> – 60 business days processing time</p>
       </div>
 
       <div class="mb-4">
         <h3 class="font-semibold">Length of Stay</h3>
-        <p>5 years or 10 years <a href="#" class="text-blue-600 underline">Please click here for detailed information on extension</a></p>
+        <p class="text-sm text-gray-700">Up to 5 years</p>
       </div>
 
       <div class="mb-4">
-        <h3 class="font-semibold">With this visa you <span class="text-green-600">CAN</span>:</h3>
+        <h3 class="font-semibold">With this visa, you <span class="text-green-600">CAN</span>:</h3>
         <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Bring eligible members of your family.</li>
-          <li>Travel to and from Indonesia as long as your permit is valid.</li>
-          <li>Carry out business and investment activity while in Indonesia.</li>
+          <li>Live in Indonesia for five years, with the possibility of extension.</li>
+          <li>Work in Indonesia (requires a work permit for the specific job).</li>
+          <li>Engage in social, cultural, educational, and familial activities.</li>
         </ul>
       </div>
 
       <div class="mb-4">
         <h3 class="font-semibold">With this visa, you <span class="text-red-600">CANNOT</span>:</h3>
         <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Be employed or get paid by Indonesian company.</li>
-          <li>Work in Indonesia under this visa unless with the work permit.</li>
+          <li>Work digitally from Bali or other additional permits.</li>
+          <li>Do business registration or work without a work permit.</li>
         </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Visa Validity</h3>
-        <p>This visa must be used within 90 days from the date of issue.</p>
       </div>
 
       <div class="mb-4">
         <h3 class="font-semibold">Document Requirements</h3>
         <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Valid visa application form.</li>
-          <li>Passport with a minimum of 6 (six) months validity.</li>
-          <li>Recent color photograph (digital format).</li>
-          <li>Personal bank statement showing a minimum equivalent amount of USD $2000. The statement must cover the last 3 months and include your name, the date, and the account balance.</li>
-          <li>Proof of guarantee from the national government.</li>
-          <li>Invitation letter from Indonesian organization explaining the purpose of the invitation.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Additional Requirement FOR Global talent invited by Government (E33A)</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Proof of guarantee from the national government.</li>
-          <li>Invitation letter from Indonesian organization explaining the purpose of the invitation.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Additional Requirement FOR Global talent who apply without invitation from the Indonesian Government (E33B)</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Certificate or letter from global organization/industry in the same area of interest, the foreigner will submit evidence of the achievement with international recognition.</li>
-          <li>Can also show:
-            <ul class="list-[circle] pl-6 mt-1">
-              <li>Evidence of work/achievements in special organizations, such as UN.</li>
-              <li>Evidence that the person is one of the top 100 in the desired field, worldwide best universities with a grade point average (GPA) of at least 3.5 (from point five).</li>
-            </ul>
-          </li>
+          <li>Real Visa application form.</li>
+          <li>Original passport valid for a minimum of 36 months.</li>
+          <li>A minimum of 24 months KITAS validity is required upon submission to immigration.</li>
+          <li>International bank account statement (minimum USD $1500).</li>
+          <li>Recent ID card (KTP) of Indonesian spouse.</li>
+          <li>Family Card (Kartu Keluarga) of Indonesian spouse.</li>
+          <li>Marriage Certificate (already registered at the spouse's Indonesian address).</li>
+          <li>Existing Limited Stay Permit (Kitas) proving that the applicant has been married for the last 2 years at time of submission.</li>
+          <li>SKTT (Temporary Residential Registration).</li>
         </ul>
       </div>
 
       <div class="flex gap-2 mt-4">
         <a x-data
-          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Global Talent (E33 A/B) Visa.\nCould you please assist me with the application process? Thank you!`)"
+          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Family Kitap.\nCould you please assist me with the application process? Thank you!`)"
           target="_blank"
           class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
           Apply Now
@@ -221,9 +191,9 @@
         <li>Processing starts only after the funds are successfully cleared into our account.</li>
       </ul>
     </div>
+
   </div>
 </div>
-
 
 
   <!-- Footer -->

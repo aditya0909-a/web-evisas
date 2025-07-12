@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - Global Talent (E33 A/B)</title>
+  <title>Evisas - Permanent Residency Visas (KITAP)</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
@@ -16,10 +16,6 @@
 </head>
 
 <body class="bg-[#f5fafd] text-gray-800">
-
-  <!-- Alpine.js -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
   <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-12">
@@ -111,119 +107,77 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
   <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Global Talent (E33 A/B)</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">Permanent Residency Visas (KITAP)</span>
   </h2>
 </div>
 </section>
 
 <div class="bg-[#021d3a] text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
-    <a href="/" class="hover:underline text-left text-blue-600">Home</a> ›
-    <a href="/landingpage/kitas" class="hover:underline text-left text-blue-600">KITAS</a> ›
-    <a href="/landingpage/kitas/goldenkitas" class="hover:underline text-left text-blue-600">Golden Visas</a> ›  
-    <span>Global Talent (E33 A/B)</span>
+    <a href="/" class="hover:underline text-blue-600">Home</a> › 
+    <span>Permanent Residency Visas (KITAP)</span>
   </div>
 </div>
 
 <div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
+    <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
 
-    <!-- Section: Global Talent (E33 A/B) -->
-    <div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
-      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">Global Talent (E33 A/B)</h2>
-      <p class="text-sm text-gray-600 mb-4">
-        The Global Talent Visa Indonesia is designed to attract skilled individuals from abroad to contribute in Indonesia. It aims to enhance the country's competitiveness by bringing in global talents to support various economic and industrial sectors.
-      </p>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Price</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>5 years:</strong> IDR 25,000,000 – 60 business days processing time</li>
-          <li><strong>10 years:</strong> IDR 35,000,000 – 60 business days processing time</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Length of Stay</h3>
-        <p>5 years or 10 years <a href="#" class="text-blue-600 underline">Please click here for detailed information on extension</a></p>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">With this visa you <span class="text-green-600">CAN</span>:</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Bring eligible members of your family.</li>
-          <li>Travel to and from Indonesia as long as your permit is valid.</li>
-          <li>Carry out business and investment activity while in Indonesia.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">With this visa, you <span class="text-red-600">CANNOT</span>:</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Be employed or get paid by Indonesian company.</li>
-          <li>Work in Indonesia under this visa unless with the work permit.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Visa Validity</h3>
-        <p>This visa must be used within 90 days from the date of issue.</p>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Document Requirements</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Valid visa application form.</li>
-          <li>Passport with a minimum of 6 (six) months validity.</li>
-          <li>Recent color photograph (digital format).</li>
-          <li>Personal bank statement showing a minimum equivalent amount of USD $2000. The statement must cover the last 3 months and include your name, the date, and the account balance.</li>
-          <li>Proof of guarantee from the national government.</li>
-          <li>Invitation letter from Indonesian organization explaining the purpose of the invitation.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Additional Requirement FOR Global talent invited by Government (E33A)</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Proof of guarantee from the national government.</li>
-          <li>Invitation letter from Indonesian organization explaining the purpose of the invitation.</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Additional Requirement FOR Global talent who apply without invitation from the Indonesian Government (E33B)</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li>Certificate or letter from global organization/industry in the same area of interest, the foreigner will submit evidence of the achievement with international recognition.</li>
-          <li>Can also show:
-            <ul class="list-[circle] pl-6 mt-1">
-              <li>Evidence of work/achievements in special organizations, such as UN.</li>
-              <li>Evidence that the person is one of the top 100 in the desired field, worldwide best universities with a grade point average (GPA) of at least 3.5 (from point five).</li>
-            </ul>
-          </li>
-        </ul>
-      </div>
-
-      <div class="flex gap-2 mt-4">
-        <a x-data
-          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Global Talent (E33 A/B) Visa.\nCould you please assist me with the application process? Thank you!`)"
-          target="_blank"
-          class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-          Apply Now
-        </a>
-      </div>
+      <!-- Investor Kitap -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+    <img src="/images/investor-kitas.jpg" alt="Investor Kitap" class="rounded-xl mb-4 w-full h-40 object-cover">
+    <div>
+    <h3 class="text-xl font-bold text-[#1e293b] mb-2">Investor Kitap</h3>
+    <p class="text-sm text-gray-600 mb-4">Suitable for foreign investors who have owned shares in an Indonesian company for at least 2 years. It is valid for five years and is extendable for a lifetime.</p>
+    <p class="text-sm mb-4"><strong>IDR 55,000,000</strong> – 60 business days</p>
+    </div>
+    <div class="mt-auto flex gap-3">
+        <a href="/landingpage/kitap/investorkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
+    </div>
     </div>
 
-    <div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
-      <h4 class="font-semibold mb-2">NOTE:</h4>
-      <ul class="list-disc pl-6 space-y-1">
-        <li>Please be aware that international bank transfers can take up to 5 business days to clear in Bali.</li>
-        <li>Business days do not include public holidays or weekends.</li>
-        <li>Processing starts only after the funds are successfully cleared into our account.</li>
-      </ul>
+    <!-- Working Kitap -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+    <img src="/images/working-kitas.jpg" alt="Working Kitap" class="rounded-xl mb-4 w-full h-40 object-cover">
+    <div>
+    <h3 class="text-xl font-bold text-[#1e293b] mb-2">Working Kitap</h3>
+    <p class="text-sm text-gray-600 mb-4">Suitable for foreigners who are employed by and have held a Working KITAS for an Indonesian company for at least two years. This visa is valid for five years and is extendable for a lifetime.</p>
+    <p class="text-sm mb-4"><strong>IDR 60,000,000</strong> (included 12 months work permit & 2 years Multiple entry permit)</p>
     </div>
-  </div>
-</div>
+    <div class="mt-auto flex gap-3">
+        <a href="/landingpage/kitap/workingkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
+    </div>
+    </div>
 
+    <!-- Family Kitap -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+    <img src="/images/KITAP.svg" alt="Family Kitap" class="rounded-xl mb-4 w-full h-40 object-cover">
+    <div>
+    <h3 class="text-xl font-bold text-[#1e293b] mb-2">Family Kitap</h3>
+    <p class="text-sm text-gray-600 mb-4">Suitable for foreigners married to Indonesian citizens or children of Indonesian parents. It allows you to stay indefinitely for spouse-sponsored, or those converting from a family KITAS after 2 years.</p>
+    <p class="text-sm mb-4"><strong>IDR 40,000,000</strong> – 60 business days</p>
+    </div>
+    <div class="mt-auto flex gap-3">
+        <a href="/landingpage/kitap/workingkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
+    </div>
+    </div>
+
+    <!-- Retirement Kitap -->
+    <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+    <img src="/images/retirement-kitas.jpg" alt="Retirement Kitap" class="rounded-xl mb-4 w-full h-40 object-cover">
+    <div>
+    <h3 class="text-xl font-bold text-[#1e293b] mb-2">Retirement Kitap</h3>
+    <p class="text-sm text-gray-600 mb-4">Suitable for foreigners who have held a Retirement KITAS for at least four years. It is valid for five years and is extendable for a lifetime.</p>
+    <p class="text-sm mb-4"><strong>IDR 20,000,000</strong> – 60 business days</p>
+    </div>
+    <div class="mt-auto flex gap-3">
+        <a href="/landingpage/kitap/retirementkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
+    </div>
+    </div>
+
+    </div>
+    </div>
+    </div>
 
 
   <!-- Footer -->

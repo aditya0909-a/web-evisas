@@ -149,7 +149,7 @@
           <p class="text-sm mb-4"><strong>IDR 25,000,000</strong> – 6-8 business days</p>
         </div>
         <div class="mt-auto flex gap-3">
-            <a href="/landingpage/kitas/goldenkitas/E31B" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
+            <a href="/landingpage/kitas/goldenkitas/E33" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>
         </div>
 
