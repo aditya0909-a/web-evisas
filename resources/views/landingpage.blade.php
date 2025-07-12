@@ -17,7 +17,7 @@
 
 <body class="bg-black-50 text-gray-800">
   <!-- Header -->
-<header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
+  <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-12">
 
@@ -138,14 +138,14 @@
           <!-- Negara -->
           <div class="flex flex-col text-left w-full md:w-auto">
             <label class="text-sm font-medium text-white mb-1">Citizen</label>
-            <input x-model="negara" type="text" placeholder="e.g. Indonesia"
+            <input x-model="negara" type="text" placeholder="e.g. Netherlands"
               class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
 
           <!-- Tujuan -->
           <div class="flex flex-col text-left w-full md:w-auto">
             <label class="text-sm font-medium text-white mb-1">Destination</label>
-            <input x-model="tujuan" type="text" placeholder="e.g. Netherlands"
+            <input x-model="tujuan" type="text" placeholder="e.g. Indonesia"
               class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
           </div>
 
@@ -156,7 +156,7 @@
               class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
               <option>Tourism</option>
               <option>Business</option>
-              <option>Education</option>
+              <option>Working</option>
             </select>
           </div>
 
@@ -178,7 +178,6 @@
 <!-- Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
-<!-- Slider Container -->
 <div class="bg-cover py-12 px-4 sm:px-6 lg:px-16 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')" x-data="{ current: 0, slides: [0, 1, 2, 3, 4] }">
   <h2 class="text-4xl text-center md:text-5xl font-bold text-gray-900 mb-4">
     <span class="underline decoration-yellow-500 underline-offset-4">Ours Services</span>
@@ -254,7 +253,7 @@
           <p class="text-gray-600 mb-2">
             We also provide translation, sponsorship, document processing, and immigration consulting services.
           </p>
-          <a href="/landingpage/additional-services" class="inline-block mt-2 pb-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
+          <a href="/landingpage/additional" class="inline-block mt-2 pb-2 px-6 py-3 bg-blue-500 text-white rounded-full hover:bg-blue-700">LEARN MORE</a>
         </div>
       </div>
 

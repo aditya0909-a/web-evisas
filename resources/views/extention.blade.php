@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - Visa & Visa extention</title>
+  <title>Evisas - Visa & Kitas Extention</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
@@ -107,7 +107,7 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
   <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Visa & Visa extention</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">Visa & Kitas Extention</span>
   </h2>
 </div>
 </section>
@@ -115,13 +115,73 @@
 <div class="bg-[#021d3a] text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
     <a href="/" class="hover:underline text-blue-600">Home</a> › 
-    <span>Visa & Visa extention</span>
+    <span>Visa & Kitas Extention</span>
   </div>
 </div>
 
 <div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+
+      <!-- E-Visa VOA Extension -->
+      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+        <img src="/images/voa.png" alt="Voa extention" class="rounded-xl mb-4 w-full h-40 object-cover">
+        <h3 class="text-xl font-bold text-[#1e293b] mb-2">E - Visa VOA Extension</h3>
+        <p class="text-sm text-gray-600 mb-2">A VOA extension permits an additional 30 days stay from visa expiration, after which another visa is required.</p>
+        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
+          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
+          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
+        </ul>
+        <div class="flex gap-2 mt-auto">
+          <a href="/landingpage/extention/voaextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the VOA extenntion.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
+        </div>
+      </div>
+
+      <!-- Single Entry Visa Extension -->
+      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+        <img src="/images/single-entry.png" alt="Pre Invesment" class="rounded-xl mb-4 w-full h-40 object-cover">
+        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Single Entry Visa Extension</h3>
+        <p class="text-sm text-gray-600 mb-2">Applies to Tourist, Business, Social, Humanitarian, or Journalistic visas. Max 2 extensions of 60 days each.</p>
+        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
+          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
+          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
+        </ul>
+        <div class="flex gap-2 mt-auto">
+          <a href="/landingpage/extention/singleentryextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Single Entry Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
+        </div>
+      </div>
+
+      <!-- Multiple Entry Tourist & Business Visa Extension -->
+      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+        <img src="/images/remoteworker-kitas.jpg" alt="Pre Invesment" class="rounded-xl mb-4 w-full h-40 object-cover">
+        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Multiple Entry Tourist & Business Visa Extension</h3>
+        <p class="text-sm text-gray-600 mb-2">Allows additional 60-day stay for tourism or business purposes. Maximize your visit time.</p>
+        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
+          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
+          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
+        </ul>
+        <div class="flex gap-2 mt-auto">
+          <a href="/landingpage/extention/multipleentrytouristbusinessextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+        <a x-data
+        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Multiple Entry Tourist & Business Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
+        target="_blank"
+        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
+        Apply
+        </a>
+        </div>
+      </div>
 
       <!-- Investor KITAS Extension -->
       <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
@@ -166,86 +226,6 @@
           <a href="/landingpage/extention/workingkitasextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
         :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the working kitas extention.\nCould you please assist me with the application process? Thank you!`)"
-        target="_blank"
-        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-        Apply
-        </a>
-        </div>
-      </div>
-
-      <!-- E-Visa VOA Extension -->
-      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-        <img src="/images/voa.png" alt="Voa extention" class="rounded-xl mb-4 w-full h-40 object-cover">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">E - Visa VOA Extension</h3>
-        <p class="text-sm text-gray-600 mb-2">A VOA extension permits an additional 30 days stay from visa expiration, after which another visa is required.</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
-        </ul>
-        <div class="flex gap-2 mt-auto">
-          <a href="/landingpage/extention/voaextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a x-data
-        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the VOA extenntion.\nCould you please assist me with the application process? Thank you!`)"
-        target="_blank"
-        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-        Apply
-        </a>
-        </div>
-      </div>
-
-      <!-- Multiple Entry Pre-Investment Visa Extension -->
-      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-        <img src="/images/pre-invesment.png" alt="Pre Invesment" class="rounded-xl mb-4 w-full h-40 object-cover">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Multiple Entry Pre-Investment Visa Extension</h3>
-        <p class="text-sm text-gray-600 mb-2">Allows 60 additional days of stay, up to a maximum validity of 180 days total.</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
-        </ul>
-        <div class="flex gap-2 mt-auto">
-          <a href="/landingpage/extention/multipleentrypreinvesmentextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a x-data
-        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the  Multiple Entry Pre-Investment Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
-        target="_blank"
-        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-        Apply
-        </a>
-        </div>
-      </div>
-
-      <!-- Multiple Entry Tourist & Business Visa Extension -->
-      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-        <img src="/images/remoteworker-kitas.jpg" alt="Pre Invesment" class="rounded-xl mb-4 w-full h-40 object-cover">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Multiple Entry Tourist & Business Visa Extension</h3>
-        <p class="text-sm text-gray-600 mb-2">Allows additional 60-day stay for tourism or business purposes. Maximize your visit time.</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
-        </ul>
-        <div class="flex gap-2 mt-auto">
-          <a href="/landingpage/extention/multipleentrytouristbusinessextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a x-data
-        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Multiple Entry Tourist & Business Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
-        target="_blank"
-        class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-        Apply
-        </a>
-        </div>
-      </div>
-
-      <!-- Single Entry Visa Extension -->
-      <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-        <img src="/images/single-entry.png" alt="Pre Invesment" class="rounded-xl mb-4 w-full h-40 object-cover">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Single Entry Visa Extension</h3>
-        <p class="text-sm text-gray-600 mb-2">Applies to Tourist, Business, Social, Humanitarian, or Journalistic visas. Max 2 extensions of 60 days each.</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
-        </ul>
-        <div class="flex gap-2 mt-auto">
-          <a href="/landingpage/extention/singleentryextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
-        <a x-data
-        :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Single Entry Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
         target="_blank"
         class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
         Apply
@@ -337,13 +317,9 @@
     </div>
     </div>
 
-
     </div>
   </div>
 </div>
-
-
-
 
   <!-- Footer -->
   <footer class="bg-[#021d3a] text-white py-10">

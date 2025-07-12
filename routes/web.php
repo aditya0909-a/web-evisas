@@ -212,3 +212,63 @@ Route::get('/landingpage/kitap/retirementkitap', function () {
 Route::get('/landingpage/extention', function () {
     return view('extention');
 });
+
+Route::get('/landingpage/extention/familyindonesianextention', function () {
+    return view('extention.familyindonesianextention');
+});
+
+Route::get('/landingpage/extention/familykitasextention', function () {
+    return view('extention.familykitasextention');
+});
+
+Route::get('/landingpage/extention/investorkitasextention', function () {
+    return view('extention.investorkitasextention');
+});
+
+Route::get('/landingpage/extention/multipleentrytouristbusinessextention', function () {
+    return view('extention.multipleentrytouristbusinessextention');
+});
+
+Route::get('/landingpage/extention/retirementkitasextention', function () {
+    return view('extention.retirementkitasextention');
+});
+
+Route::get('/landingpage/extention/singleentryextention', function () {
+    return view('extention.singleentryextention');
+});
+
+Route::get('/landingpage/extention/voaextention', function () {
+    return view('extention.voaextention');
+});
+
+Route::get('/landingpage/extention/workingkitasextention', function () {
+    return view('extention.workingkitasextention');
+});
+
+Route::get('/landingpage/additional', function () {
+    return view('additional');
+});
+
+Route::get('/landingpage/additional/bridgingvisa', function () {
+    return view('additional.bridgingvisa');
+});
+
+Route::get('/landingpage/additional/addressmutation', function () {
+    return view('additional.addressmutation');
+});
+
+Route::get('/landingpage/additional/affidavit', function () {
+    return view('additional.affidavit');
+});
+
+Route::get('/landingpage/additional/birthreport', function () {
+    return view('additional.birthreport');
+});
+
+Route::get('/landingpage/additional/indonesianpassport', function () {
+    return view('additional.indonesianpassport');
+});
+
+Route::get('/landingpage/additional/passportmutation', function () {
+    return view('additional.passportmutation');
+});
