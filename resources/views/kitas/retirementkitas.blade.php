@@ -7,7 +7,7 @@
   <title>Evisas - E33F - Retirement Kitas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -219,11 +219,7 @@
         </a>
       </div>
     </div>
-
-  </div>
-</div>
-
-
+ 
     <div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
       <h4 class="font-semibold mb-2">NOTE:</h4>
       <ul class="list-disc pl-6 space-y-1">

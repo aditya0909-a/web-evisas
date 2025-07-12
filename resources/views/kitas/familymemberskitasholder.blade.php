@@ -7,7 +7,7 @@
   <title>Evisas - Family Members of Kitas Holders and long stay Visas</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -126,11 +126,11 @@
 
       <!-- E31B - Spousal of KITAS holder -->
         <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/spousal-kitas.jpg" alt="Spousal Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
             <h3 class="text-xl font-semibold text-gray-800">E31B - Spousal of KITAS holder</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">This visa is for the spouse of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder but does not allow the spouse to work.</p>
+        <p class="text-sm text-gray-600 mb-2 ">This visa is for the spouse of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder but does not allow the spouse to work.</p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
             ➖ Prices
         </button>
@@ -172,11 +172,11 @@
 
       <!-- E31E - Child of KITAS holder -->
         <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/child-kitas.jpg" alt="Child Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
             <h3 class="text-xl font-semibold text-gray-800">E31E - Child of KITAS holder</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">This visa is for the dependent child (under 18 years old) of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder.</p>
+        <p class="text-sm text-gray-600 mb-2 ">This visa is for the dependent child (under 18 years old) of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder.</p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
             ➖ Prices
         </button>
@@ -218,11 +218,11 @@
 
       <!-- E31H - Parent of KITAS holder -->
         <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/parent-kitas.jpg" alt="parent Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
             <h3 class="text-xl font-semibold text-gray-800">E31H - Parent of KITAS holder</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">This visa is for the parent of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder but does not allow the parent to work.</p>
+        <p class="text-sm text-gray-600 mb-2 ">This visa is for the parent of a foreign national with any type of KITAS. It is valid for the same duration as the primary KITAS holder but does not allow the parent to work.</p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
             ➖ Prices
         </button>

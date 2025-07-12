@@ -7,7 +7,7 @@
   <title>Evisas - C12 - Single Entry Pre-Investment</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;

@@ -7,7 +7,7 @@
   <title>Evisas - KITAS</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -125,11 +125,11 @@
 
       <!-- Investor KITAS -->
       <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/investor-kitas.jpg" alt="Investor KITAS" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
           <h3 class="text-xl font-semibold text-gray-800">Investor Kitas</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">The Investor KITAS is available to foreigners wanting to invest or establish a company in Indonesia. This visa allows multiple entries and is valid for, and permits a continuous stay of up to 2 years.</p>
+        <p class="text-sm text-gray-600 mb-2">The Investor KITAS is available to foreigners wanting to invest or establish a company in Indonesia. This visa allows multiple entries and is valid for, and permits a continuous stay of up to 2 years.</p>
         <button type="button" class=" text-left text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
           ➖ Prices
         </button>
@@ -159,11 +159,11 @@
 
       <!-- Working KITAS -->
       <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/working-kitas.jpg" alt="Working Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
           <h3 class="text-xl font-semibold text-gray-800">Working Kitas</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">This KITAS is for foreigners who wish to work and earn money in Bali legally. Single and Multiple entry visa holders can convert this KITAS for up to 1 year, with the validity depending on the job position.</p>
+        <p class="text-sm text-gray-600 mb-2">This KITAS is for foreigners who wish to work and earn money in Bali legally. Single and Multiple entry visa holders can convert this KITAS for up to 1 year, with the validity depending on the job position.</p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
           ➖ Prices
         </button>
@@ -198,11 +198,11 @@
 
       <!-- Retirement KITAS -->
       <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/retirement-kitas.jpg" alt="Retirement Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
           <h3 class="text-xl font-semibold text-gray-800">Retirement Kitas</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">The Retirement Kitas is available for foreign nationals aged 60 and above who wish to retire in Indonesia. Applicants must show proof of sufficient funds to support their stay. This visa is valid for 1 year and can be renewed. Holders of this visa are not allowed to work.</p>
+        <p class="text-sm text-gray-600 mb-2">The Retirement Kitas is available for foreign nationals aged 60 and above who wish to retire in Indonesia. Applicants must show proof of sufficient funds to support their stay. This visa is valid for 1 year and can be renewed. Holders of this visa are not allowed to work.</p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
           ➖ Prices
         </button>
@@ -238,11 +238,11 @@
 
 <!-- Digital Nomad Visa (Remote Worker) -->
       <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/remoteworker-kitas.jpg" alt="Remote Worker" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
           <h3 class="text-xl font-semibold text-gray-800">Digital Nomad Visa (Remote Worker)</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">This Digital Nomad visa is designed for remote workers who wish to live in Indonesia while working for foreign companies. This visa is valid for up to 1 year and is renewable.</p>
+        <p class="text-sm text-gray-600 mb-2">This Digital Nomad visa is designed for remote workers who wish to live in Indonesia while working for foreign companies. This visa is valid for up to 1 year and is renewable.</p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
           ➖ Prices
         </button>
@@ -266,11 +266,11 @@
 
       <!-- Family Members of Kitas Holders and long stay Visas -->
         <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/familyholder-kitas.jpg" alt="Family Holder Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
             <h3 class="text-xl font-semibold text-gray-800">Family Members of Kitas Holders and long stay Visas</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">
+        <p class="text-sm text-gray-600 mb-2">
             Dependent family members of KITAS and long-stay visa holders (including Golden and Remote Worker Visas) are allowed to reside in Indonesia as dependents of their sponsoring family member.
         </p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
@@ -308,11 +308,11 @@
 
         <!-- Family Members of Indonesian Citizens -->
         <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
-
+        <img src="/images/familyindonesian-kitas.jpg" alt="Family Indonesian Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div class="flex items-center gap-3 mb-3">
             <h3 class="text-xl font-semibold text-gray-800">Family Members of Indonesian Citizens</h3>
         </div>
-        <p class="text-sm text-gray-600 mb-4">
+        <p class="text-sm text-gray-600 mb-2">
             Family members of Indonesian citizens are permitted to reside in Indonesia as dependents of their sponsoring Indonesian family member.
         </p>
         <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
@@ -349,11 +349,12 @@
         </div>
 
         <!-- Student Kitas Card -->
-  <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    <img src="/images/student-kitas.jpg" alt="Student Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div class="flex items-center gap-2 mb-4">
       <h2 class="text-xl font-semibold">Student Kitas</h2>
     </div>
-    <p class="mb-4 text-sm text-gray-600">
+    <p class="text-sm text-gray-600 mb-2">
       A person planning to study at a high school or below, or someone enrolling in college for a bachelor's, master's, or doctoral degree.
     </p>
 
@@ -396,10 +397,11 @@
 
   <!-- Ex-Indonesian Citizen Visa Card -->
   <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    <img src="/images/ex-indonesian-kitas.jpg" alt="Ex-Indonesian Citizen Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div class="flex items-center gap-2 mb-4">
       <h2 class="text-xl font-semibold">Ex-Indonesian Citizen Visa</h2>
     </div>
-    <p class="mb-4 text-sm text-gray-600">
+    <p class="text-sm text-gray-600 mb-2">
       This visa is for former Indonesian citizens who have acquired foreign citizenship and intend to reside in Indonesia for 1 or 2 years.
     </p>
 
@@ -425,10 +427,11 @@
 
   <!-- Golden Visas Card -->
   <div class="bg-white border border-gray-200 rounded-2xl shadow-lg p-6 hover:shadow-xl transition-all duration-300 flex flex-col justify-between">
+    <img src="/images/golden-kitas.jpg" alt="Golden Kitas" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div class="flex items-center gap-2 mb-4">
       <h2 class="text-xl font-semibold">Golden Visas</h2>
     </div>
-    <p class="mb-4 text-sm text-gray-600">
+    <p class="text-sm text-gray-600 mb-2">
      This visa is for investors, former Indonesian citizens, or people with special skills. It allows you to stay for 5 or 10 years and you can bring your family too.
     </p>
     

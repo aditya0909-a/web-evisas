@@ -7,7 +7,7 @@
   <title>Evisas - Multiple Entry Visitor Visa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -126,6 +126,7 @@
 
       <!-- D1 - Multiple Entry Tourist Visa -->
       <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+        <img src="/images/tourist-singleentry.png" alt="tourist-multipleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div>
           <h3 class="text-xl font-bold text-[#1e293b] mb-2">D1 - Multiple Entry Tourist Visa</h3>
           <p class="text-sm text-gray-600 mb-4">Ideal for extended holidays. Stay 60 days, extendable twice (up to 180 days per visit). Re-entry allowed during visa validity.</p>
@@ -160,6 +161,7 @@
 
       <!-- D2 - Multiple Entry Business Visa -->
       <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+        <img src="/images/business-singleentry.png" alt="business-multipleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div>
           <h3 class="text-xl font-bold text-[#1e293b] mb-2">D2 - Multiple Entry Business Visa</h3>
           <p class="text-sm text-gray-600 mb-4">This visa is ideal for unpaid business activities. Stay 60 days, extendable twice (up to 180 days per visit). Re-entry allowed during visa validity.</p>
@@ -194,6 +196,7 @@
 
       <!-- D12 - Multiple Entry Pre-Investment Visa -->
       <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+        <img src="/images/investor-kitas.jpg" alt="invesment-multipleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
         <div>
           <h3 class="text-xl font-bold text-[#1e293b] mb-2">D12 - Multiple Entry Pre-Investment Visa</h3>
           <p class="text-sm text-gray-600 mb-4">This visa is ideal for exploring business opportunities in Indonesia, including site visits, surveys, or feasibility studies. It allows a stay of up to 180 days and can be extended once.</p>

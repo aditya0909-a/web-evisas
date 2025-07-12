@@ -125,8 +125,8 @@ Route::get('/landingpage/kitas/exindonesianvisa', function () {
     return view('kitas.exindonesianvisa');
 });
 
-Route::get('/landingpage/kitas/goldenvisa', function () {
-    return view('kitas.goldenvisa');
+Route::get('/landingpage/kitas/goldenkitas', function () {
+    return view('kitas.goldenkitas');
 });
 
 Route::get('/landingpage/kitas/familymemberskitas/E31B', function () {
@@ -139,4 +139,52 @@ Route::get('/landingpage/kitas/familymemberskitas/E31E', function () {
 
 Route::get('/landingpage/kitas/familymemberskitas/E31H', function () {
     return view('kitas.familymemberskitas.E31H');
+});
+
+Route::get('/landingpage/kitas/familymembersindonesian/E31A', function () {
+    return view('kitas.familyindonesiankitas.E31A');
+});
+
+Route::get('/landingpage/kitas/familymembersindonesian/E31C', function () {
+    return view('kitas.familyindonesiankitas.E31C');
+});
+
+Route::get('/landingpage/kitas/familymembersindonesian/E31D', function () {
+    return view('kitas.familyindonesiankitas.E31D');
+});
+
+Route::get('/landingpage/kitas/familymembersindonesian/E31F', function () {
+    return view('kitas.familyindonesiankitas.E31F');
+});
+
+Route::get('/landingpage/kitas/familymembersindonesian/E31G', function () {
+    return view('kitas.familyindonesiankitas.E31G');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/dependentfamily', function () {
+    return view('kitas.goldenkitas.dependentfamily');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/E32A', function () {
+    return view('kitas.goldenkitas.E32A');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/E32B', function () {
+    return view('kitas.goldenkitas.E32B');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/E33', function () {
+    return view('kitas.goldenkitas.E33');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/E33E', function () {
+    return view('kitas.goldenkitas.E33E');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/globaltalent', function () {
+    return view('kitas.goldenkitas.globaltalent');
+});
+
+Route::get('/landingpage/kitas/goldenkitas/goldeninvestors', function () {
+    return view('kitas.goldenkitas.goldeninvestors');
 });

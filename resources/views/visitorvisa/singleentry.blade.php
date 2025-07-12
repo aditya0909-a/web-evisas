@@ -7,7 +7,7 @@
   <title>Evisas - Single Entry Visitor Visa</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="icon" type="image/png" href="{{ asset('icons/favicon.png') }}">
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -125,6 +125,7 @@
     <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
       <!-- Card 1 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+    <img src="/images/tourist-singleentry.png" alt="tourist-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C1 - Tourist Visa</h3>
         <p class="text-sm text-gray-600 mb-4">Perfect for extended holidays and tourism visits to Indonesia.</p>
@@ -144,6 +145,7 @@
 
     <!-- Card 2 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/business-singleentry.png" alt="business-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C2 - Business Visa</h3>
         <p class="text-sm text-gray-600 mb-4">For unpaid business activities in Indonesia.</p>
@@ -163,6 +165,7 @@
 
     <!-- Card 3 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/socialvolunteer-singleentry.png" alt="socialvolunteer-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C6 - Social & Volunteer</h3>
         <p class="text-sm text-gray-600 mb-4">For volunteer, humanitarian, or social work visits.</p>
@@ -182,6 +185,7 @@
 
     <!-- Card 4 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/musicperformer-singleentry.png" alt="musicperformer-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C7A - Music Performer</h3>
         <p class="text-sm text-gray-600 mb-4">Designed for musicians and short-term performers at events in Indonesia.</p>
@@ -200,7 +204,8 @@
 
     <!-- Card 5 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-    <div>
+    <img src="/images/artperformer-singleentry.png" alt="artperformer-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
+      <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C7C - General Art Performer</h3>
         <p class="text-sm text-gray-600 mb-4">For chefs, yoga instructors, bartenders, photographers, etc., to legally participate in events in Indonesia.</p>
         <p class="text-sm mb-4"><strong>IDR 4,000,000</strong> - Priority (5 days)</p>
@@ -218,6 +223,7 @@
 
     <!-- Card 6 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/course-singleentry.png" alt="course-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C9 - Short Course</h3>
         <p class="text-sm text-gray-600 mb-4">For benchmarking, short courses, or training programs in Indonesia.</p>
@@ -237,6 +243,7 @@
 
     <!-- Card 7 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/speakers-singleentry.png" alt="speakers-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C10 - Event Participant</h3>
         <p class="text-sm text-gray-600 mb-4">For attending conventions, seminars, and events as speaker or guest.</p>
@@ -256,6 +263,7 @@
 
     <!-- Card 8 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/investor-kitas.jpg" alt="invesment-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C12 - Pre-Investment</h3>
         <p class="text-sm text-gray-600 mb-4">For business feasibility visits, site inspections, and surveys. Stay up to 180 days.</p>
@@ -275,6 +283,7 @@
 
     <!-- Card 9 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/trialwork-singleentry.png" alt="trialwork-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C18 - Work Trial</h3>
         <p class="text-sm text-gray-600 mb-4">For trial work at Indonesian companies, unpaid. For employer-employee evaluation.</p>
@@ -294,6 +303,7 @@
 
     <!-- Card 10 -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
+      <img src="/images/internship-singleentry.png" alt="internship-singleentry" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">C22B - Internship</h3>
         <p class="text-sm text-gray-600 mb-4">For internships in Indonesian companies to gain experience. Stay up to 180 days, extendable.</p>

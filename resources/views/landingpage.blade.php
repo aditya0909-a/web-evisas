@@ -7,8 +7,7 @@
   <title>Evisas - Indonesia Visa Center</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
-  <link rel="preload" as="image" href="{{ asset('icons/Bali.webp') }}">
-
+  <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
       font-family: 'Inter', sans-serif;
@@ -16,7 +15,7 @@
   </style>
 </head>
 
-<body class="bg-gray-50 text-gray-800">
+<body class="bg-black-50 text-gray-800">
   <!-- Header -->
 <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
@@ -458,8 +457,6 @@
     &copy; {{ date('Y') }} Evisas Indonesia. All rights reserved.
   </div>
 </footer>
-
-<!-- Floating WhatsApp -->
 
 
 </body>
