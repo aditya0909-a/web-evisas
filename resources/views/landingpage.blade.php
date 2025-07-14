@@ -23,6 +23,9 @@
     scroll-behavior: smooth;
   }
   </style>
+  
+  <link rel="preload" as="image" href="/images/ocean-bali.webp" type="image/webp">
+
 </head>
 
 
@@ -50,7 +53,7 @@
             <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <div x-show="serviceOpen" x-transition
+        <div x-show="serviceOpen" x-cloak x-transition
              class="absolute left-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-lg border border-blue-300 z-50 overflow-hidden">
           <a href="/landingpage/extention" class="block px-5 py-3 hover:bg-blue-100">Visa & Kitas Extension</a>
           <a href="/landingpage/kitas" class="block px-5 py-3 hover:bg-blue-100">KITAS</a>
@@ -101,19 +104,8 @@
 
 
 <section class="relative w-full min-h-screen text-white overflow-hidden mt-[-64px]">
-  <video 
-  autoplay 
-  muted 
-  loop 
-  playsinline 
-  preload="auto"
-  poster="/images/ocean-preview.jpg"
-  class="fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
-  onloadeddata="this.style.opacity='1';"
-  style="opacity: 0; transition: opacity 0.5s ease-out;">
-  <source src="/icons/ocean.mp4" type="video/mp4">
-</video>
-
+  <!-- Background Image -->
+<div class="fixed top-0 left-0 w-full h-full bg-cover bg-center z-0 pointer-events-none" style="background-image: url('/images/ocean-bali.webp');"></div>
 
 
   <!-- Overlay -->
