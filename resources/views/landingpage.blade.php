@@ -10,16 +10,27 @@
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
+    background-color: #000;
+        
       font-family: 'Inter', sans-serif;
     }
+
+    [x-cloak] {
+      display: none !important;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+  }
   </style>
 </head>
 
+
 <body class="bg-black-50 text-gray-800">
   <!-- Header -->
-  <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
+  <header class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky top-0 z-50 backdrop-blur-md"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
-  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-12">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
 
     <!-- Logo -->
     <div class="flex items-center gap-3">
@@ -29,55 +40,45 @@
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
-      <a href="/" class="text-white hover:text-blue-400 transition-colors">
-        Home
-      </a>
+      <a href="/" class="text-white hover:text-yellow-400 transition duration-200">Home</a>
 
       <!-- Dropdown -->
       <div @mouseenter="serviceOpen = true" @mouseleave="serviceOpen = false" class="relative">
-        <button class="flex items-center gap-1 text-white hover:text-blue-400 transition-colors">
+        <button class="flex items-center gap-1 text-white hover:text-yellow-400 transition duration-200">
           Our Services
           <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
         <div x-show="serviceOpen" x-transition
-             class="absolute left-0 mt-3 w-60 bg-[#334155] border border-blue-800 shadow-lg rounded-lg z-50 overflow-hidden">
-          <a href="/landingpage/extention" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visa & Kitas Extension</a>
-          <a href="/landingpage/kitas" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAS</a>
-          <a href="/landingpage/kitap" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAP</a>
-          <a href="/landingpage/visitorvisa" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visitor Visa</a>
-          <a href="/landingpage/additional" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Additional Immigration Services</a>
+             class="absolute left-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-lg border border-blue-300 z-50 overflow-hidden">
+          <a href="/landingpage/extention" class="block px-5 py-3 hover:bg-blue-100">Visa & Kitas Extension</a>
+          <a href="/landingpage/kitas" class="block px-5 py-3 hover:bg-blue-100">KITAS</a>
+          <a href="/landingpage/kitap" class="block px-5 py-3 hover:bg-blue-100">KITAP</a>
+          <a href="/landingpage/visitorvisa" class="block px-5 py-3 hover:bg-blue-100">Visitor Visa</a>
+          <a href="/landingpage/additional" class="block px-5 py-3 hover:bg-blue-100">Additional Immigration Services</a>
         </div>
       </div>
 
-      <a href="/landingpage/companyprofile" class="text-white hover:text-blue-400 transition-colors">
-        About Us
-      </a>
+      <a href="/landingpage/companyprofile" class="text-white hover:text-yellow-400 transition duration-200">About Us</a>
     </nav>
 
     <!-- Mobile Nav Toggle -->
     <div class="md:hidden relative">
       <button @click="navOpen = !navOpen" class="text-white focus:outline-none transition">
         <svg x-show="!navOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+             viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         <svg x-show="navOpen" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+             viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
       </button>
 
       <!-- Mobile Menu -->
       <div x-show="navOpen" x-cloak x-transition
-           class="absolute right-0 mt-3 w-64 bg-[#334155] shadow-xl rounded-lg py-4 px-5 z-50 text-sm space-y-3 border border-blue-800">
-        <a href="/" class="block text-white hover:text-blue-400">Home</a>
-
-        <!-- Mobile Dropdown -->
+           class="absolute right-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-xl py-4 px-5 z-50 border border-blue-300 space-y-3 text-sm">
+        <a href="/" class="block hover:text-yellow-500">Home</a>
         <div>
           <button @click="mobileServiceOpen = !mobileServiceOpen"
-                  class="flex justify-between items-center w-full text-white hover:text-blue-400 transition">
+                  class="flex justify-between items-center w-full hover:text-yellow-500">
             Our Services
             <svg class="w-4 h-4 transform transition-transform duration-200"
                  :class="{ 'rotate-180': mobileServiceOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -85,100 +86,89 @@
             </svg>
           </button>
           <div x-show="mobileServiceOpen" x-transition class="pl-4 mt-2 space-y-2">
-            <a href="/landingpage/extention" class="block text-white hover:text-blue-400">Visa & Kitas Extension</a>
-            <a href="/landingpage/kitas" class="block text-white hover:text-blue-400">KITAS</a>
-            <a href="/landingpage/kitap" class="block text-white hover:text-blue-400">KITAP</a>
-            <a href="/landingpage/visitorvisa" class="block text-white hover:text-blue-400">Visitor Visa</a>
-            <a href="/landingpage/additional" class="block text-white hover:text-blue-400">Additional Immigration Services</a>
+            <a href="/landingpage/extention" class="block hover:text-yellow-500">Visa & Kitas Extension</a>
+            <a href="/landingpage/kitas" class="block hover:text-yellow-500">KITAS</a>
+            <a href="/landingpage/kitap" class="block hover:text-yellow-500">KITAP</a>
+            <a href="/landingpage/visitorvisa" class="block hover:text-yellow-500">Visitor Visa</a>
+            <a href="/landingpage/additional" class="block hover:text-yellow-500">Additional Immigration Services</a>
           </div>
         </div>
-
-        <a href="/landingpage/companyprofile" class="block text-white hover:text-blue-400">About Us</a>
+        <a href="/landingpage/companyprofile" class="block hover:text-yellow-500">About Us</a>
       </div>
     </div>
   </div>
 </header>
 
 
-<!-- Hero Section -->
-<img src="{{ asset('icons/Bali.jpg') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
+<section class="relative w-full min-h-screen text-white overflow-hidden mt-[-64px]">
+  <video 
+  autoplay 
+  muted 
+  loop 
+  playsinline 
+  preload="auto"
+  poster="/images/ocean-preview.jpg"
+  class="fixed top-0 left-0 w-full h-full object-cover z-0 pointer-events-none"
+  onloadeddata="this.style.opacity='1';"
+  style="opacity: 0; transition: opacity 0.5s ease-out;">
+  <source src="/icons/ocean.mp4" type="video/mp4">
+</video>
 
 
-<section class="relative w-full h-screen text-white overflow-hidden mt-[-64px]">
-  <!-- Background Video -->
- <video 
-    autoplay 
-    muted 
-    loop 
-    playsinline 
-    preload="auto"
-    poster="/images/ocean-preview.jpg"
-    class="absolute inset-0 w-full h-full object-cover z-0"
-    onloadeddata="this.style.opacity='1';"
-    style="opacity:-2; transition: opacity 0.2s ease-out;">
-    <source src="/icons/ocean.mp4" type="video/mp4">
-    Your browser does not support the video tag.
-  </video>
 
-  <!-- Overlay (opsional) -->
-  <div class="absolute inset-0 bg-black/50 z-10"></div>
+  <!-- Overlay -->
+  <div class="absolute inset-0 bg-black/60 z-10"></div>
 
   <!-- Content -->
-  <div class="relative z-20 flex items-center justify-center h-full px-6 text-center">
-    <div>
-      <h1 class="text-3xl md:text-5xl font-bold mb-4">WELCOME TO EVISAS</h1>
-      <p class="text-xl md:text-3xl text-blue-400 font-semibold mb-2">Indonesia Visa Center</p>
-      <p class="text-base md:text-xl text-white italic mb-2 md:mb-6">
-        Fast. Simple. Free. Start your visa process with a quick consultation
+  <div class="relative z-20 flex items-center justify-center min-h-screen px-6 text-center">
+    <div class="max-w-2xl">
+      <h1 class="text-3xl sm:text-4xl md:text-6xl font-bold leading-tight mb-4 drop-shadow-lg">
+        Welcome to <span class="text-blue-400">Evisas</span>
+      </h1>
+      <p class="text-lg sm:text-xl md:text-2xl text-gray-200 font-medium mb-6">
+        Fast, Simple & Reliable <br class="hidden sm:inline"> Indonesian Visa Assistance Center
       </p>
-      
-        <!-- Form -->
-        <div x-data="{ negara: '', tujuan: '', jenis: 'Turis' }"
-          class="flex flex-col md:flex-row justify-center items-center gap-4 ">
-          <!-- Negara -->
-          <div class="flex flex-col text-left w-full md:w-auto">
-            <label class="text-sm font-medium text-white mb-1">Citizen</label>
-            <input x-model="negara" type="text" placeholder="e.g. Netherlands"
-              class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
 
-          <!-- Tujuan -->
-          <div class="flex flex-col text-left w-full md:w-auto">
-            <label class="text-sm font-medium text-white mb-1">Destination</label>
-            <input x-model="tujuan" type="text" placeholder="e.g. Indonesia"
-              class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500" />
-          </div>
+      <p class="text-sm sm:text-base md:text-lg text-white/80 mb-8">
+        Your journey to Indonesia starts here. We guide you through every step — stress-free and transparent.
+      </p>
 
-          <!-- Jenis Visa -->
-          <div class="flex flex-col text-left w-full md:w-auto">
-            <label class="text-sm font-medium text-white mb-1">Purpose</label>
-            <select x-model="jenis"
-              class="px-4 py-2 w-full rounded-md text-gray-800 focus:outline-none focus:ring-2 focus:ring-blue-500">
-              <option>Tourism</option>
-              <option>Business</option>
-              <option>Working</option>
-            </select>
-          </div>
-
-          <!-- Tombol Konsultasi -->
-          <a :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hi\nI’m a ${negara} citizen. I plan to stay in ${tujuan} for ${jenis}.\nCould you please explain the visa requirements for this?`)"
-            target="_blank"
-            class="bg-blue-500 hover:bg-blue-700 text-white font-medium px-6 py-2 rounded-md mt-4 md:mt-6 md:self-end transition shadow-lg hover:shadow-xl">
-            Consult Now
-          </a>
-
-          <a href="https://wa.me/628113858165" class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 p-3 rounded-full shadow-lg">
-          <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6" alt="WhatsApp">
+      <div class="flex flex-col sm:flex-row justify-center gap-4">
+        <a x-data
+          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello,  \nI would like assistance with my visa.\nCould you help me? \nThank you!`)"
+          target="_blank"
+           class="bg-blue-600 hover:bg-blue-700 text-white font-semibold px-6 py-3 rounded-lg shadow transition">
+          Start Consultation
         </a>
-        </div>
+        <a href="#" onclick="event.preventDefault(); scrollToCustom()"
+           class="border border-white hover:border-blue-400 text-white hover:text-blue-400 px-6 py-3 rounded-lg transition">
+          Learn More
+        </a>
+      </div>
     </div>
   </div>
+  
+  <script>
+  function scrollToCustom() {
+    const el = document.getElementById('services');
+    const offset = el.getBoundingClientRect().top + window.pageYOffset - 100; // scroll 300px lebih ke bawah
+    window.scrollTo({ top: offset, behavior: 'smooth' });
+  }
+</script>
+
+  <!-- Floating WhatsApp Button -->
+  <a href="https://wa.me/628113858165" 
+     class="fixed bottom-4 right-4 bg-green-500 hover:bg-green-600 p-3 rounded-full shadow-lg z-30">
+    <img src="https://upload.wikimedia.org/wikipedia/commons/6/6b/WhatsApp.svg" class="w-6 h-6" alt="WhatsApp">
+  </a>
 </section>
+
+
 
 <!-- Alpine.js -->
 <script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
 
-<div class="bg-cover py-12 px-4 sm:px-6 lg:px-16 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')" x-data="{ current: 0, slides: [0, 1, 2, 3, 4] }">
+<div id="services" class=" relative z-10 bg-cover bg-cover py-12 px-4 sm:px-6 lg:px-16 overflow-hidden" style="background-image: url('{{ asset('images/patternocean.svg') }}')" x-data="{ current: 0, slides: [0, 1, 2, 3, 4] }">
   <h2 class="text-4xl text-center md:text-5xl font-bold text-gray-900 mb-4">
     <span class="underline decoration-yellow-500 underline-offset-4">Ours Services</span>
   </h2>
@@ -268,7 +258,7 @@
 </div>
 
 <!-- Why Choose Evisas Section -->
-<section class="py-24 px-6 bg-gradient-to-br from-blue-50 to-[#e6f0ff] text-center">
+<section class=" relative z-10 py-24 px-6 bg-gradient-to-br from-blue-50 to-[#e6f0ff] text-center">
   <h2 class="text-4xl md:text-5xl font-bold text-gray-900 mb-4">
     <span class="underline decoration-yellow-500 underline-offset-4">Why Choose Evisas?</span>
   </h2>
@@ -307,15 +297,14 @@
 
 
 
-<!-- Process Section -->
-<img src="{{ asset('images/rock.jpg') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
-<section class="py-20 px-6 bg-[url('/images/rock.jpg')] bg-cover bg-center text-white relative">
+
+<section class="py-20 px-6 text-white relative">
 
   <!-- Overlay semi-transparan gelap -->
   <div class="absolute inset-0 bg-black/50"></div>
 
   <!-- Konten -->
-  <div class="relative z-10 max-w-6xl mx-auto text-center">
+  <div class="relative z-10 max-w-6xl mx-auto text-center relative z-10">
     <h2 class="text-4xl md:text-5xl font-bold mb-4">
       <span class="underline decoration-yellow-500 underline-offset-4">Easy Online Process</span>
     </h2>
@@ -370,7 +359,7 @@
 </section>
 
 <!-- Ulasan -->
-<section class="py-12 px-6 bg-white text-center">
+<section class="py-12 px-6 bg-white text-center relative z-10">
   <h2 class="text-4xl md:text-5xl font-bold mb-4">
       <span class="underline decoration-yellow-500 underline-offset-4">What They Saying About Us</span>
     </h2>
@@ -405,22 +394,16 @@
   </p>
 </section>
 
-
-  <!-- Google Map -->
-  <section class="my-8">
-    <iframe class="w-full  h-96" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3944.3997806211897!2d115.1754665!3d-8.6860181!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x2dd24753435341db%3A0xd82d582a7ccc2fe5!2sEVISAS%20Indonesia%20Visa%20Center!5e0!3m2!1sen!2sid!4v1720200000000!5m2!1sen!2sid"></iframe>
-  </section>
-
-  <footer class="bg-gray-800 text-white py-10">
+  <footer class="bg-gradient-to-tr from-sky-900 to-slate-800 text-white py-12 relative z-10">
   <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-    
-    <!-- Kolom Kiri: Logo & Sosial Media -->
+
+    <!-- Kiri: Logo dan Deskripsi -->
     <div>
       <img src="{{ asset('icons/logo.png') }}" alt="Logo Evisas" class="w-16 mb-4">
-      <p class="text-sm text-gray-300 mt-6">
+      <p class="text-sm text-gray-300 leading-relaxed">
         With a global network and deep understanding of immigration policies, we are committed to providing efficient and timely solutions.
       </p>
-      <div class="flex space-x-4 mt-4">
+      <div class="flex space-x-4 mt-6">
         <a href="https://facebook.com" target="_blank" class="hover:scale-110 transition-transform duration-300">
           <img src="/icons/Facebook.png" alt="Facebook" class="w-6">
         </a>
@@ -433,29 +416,29 @@
       </div>
     </div>
 
-    <!-- Kolom Kanan: Kontak & Alamat -->
+    <!-- Kanan: Kontak -->
     <div>
-      <h4 class="text-xl font-semibold mb-2 text-blue-500">Evisas</h4>
-      <p class="text-sm text-gray-300 mt-6">
-        Gunung Athena street no.38, Lingkungan Banjar Padang Sumbu Klod, Padangsambian, Denpasar Barat, Bali 80117
+      <h4 class="text-xl font-semibold mb-2 text-yellow-400">Evisas Contact</h4>
+      <p class="text-sm text-gray-300 mt-4">
+        Gunung Athena street no.38, Padangsambian, Denpasar Barat, Bali 80117
       </p>
       <p class="text-sm mt-4 text-gray-300">
-        WhatsApp: 
-        <a href="https://wa.me/628113858165" class="text-blue-400 hover:underline">+62 811-3858-165</a>
+        WhatsApp:
+        <a href="https://wa.me/628113858165" class="text-blue-300 hover:underline">+62 811-3858-165</a>
       </p>
       <p class="text-sm mt-2 text-gray-300">
-        Email: 
-        <a href="mailto:cs.evisasbali@gmail.com" class="text-blue-400 hover:underline">cs.evisasbali@gmail.com</a>
+        Email:
+        <a href="mailto:cs.evisasbali@gmail.com" class="text-blue-300 hover:underline">cs.evisasbali@gmail.com</a>
       </p>
     </div>
-
   </div>
 
   <!-- Copyright -->
-  <div class="text-center text-sm mt-10 border-t border-gray-700 pt-4 text-gray-400">
+  <div class="text-center text-xs mt-10 border-t border-blue-400 pt-4 text-gray-300">
     &copy; {{ date('Y') }} Evisas Indonesia. All rights reserved.
   </div>
 </footer>
+
 
 
 </body>
