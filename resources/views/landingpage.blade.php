@@ -29,7 +29,7 @@
 </head>
 
 
-<body class="bg-black-50 text-gray-800">
+<body class="bg-white text-gray-800">
   <!-- Header -->
   <header class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky top-0 z-50 backdrop-blur-md"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
@@ -37,9 +37,10 @@
 
     <!-- Logo -->
     <div class="flex items-center gap-3">
-      <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Logo" class="w-10 h-10">
-      <span class="text-xl md:text-2xl font-bold text-white tracking-tight">EVISAS</span>
-    </div>
+  <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Icon" class="w-10 h-10">
+  <img src="{{ asset('images/EVISAS WHITE1.png') }}" alt="Evisas Text" class="h-5 md:h-5">
+  </div>
+
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
@@ -430,8 +431,5 @@
     &copy; {{ date('Y') }} Evisas Indonesia. All rights reserved.
   </div>
 </footer>
-
-
-
 </body>
 </html>

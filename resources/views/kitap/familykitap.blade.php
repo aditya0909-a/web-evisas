@@ -10,77 +10,78 @@
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
   <style>
     body {
+    background-color: #000;
+        
       font-family: 'Inter', sans-serif;
     }
+
+    [x-cloak] {
+      display: none !important;
+    }
+    
+    html {
+    scroll-behavior: smooth;
+  }
   </style>
+  
+  <link rel="preload" as="image" href="/images/ocean-bali.webp" type="image/webp">
+
 </head>
 
-<body class="bg-[#f5fafd] text-gray-800">
 
-  <!-- Alpine.js -->
-<script src="https://cdn.jsdelivr.net/npm/alpinejs@3.x.x/dist/cdn.min.js" defer></script>
-
-  <header class="bg-[#1e293b]/90 backdrop-blur-md shadow-md sticky top-0 z-50"
+<body class="bg-white text-gray-800">
+  <!-- Header -->
+  <header class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky top-0 z-50 backdrop-blur-md"
         x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
-  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-12">
+  <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
 
     <!-- Logo -->
     <div class="flex items-center gap-3">
-      <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Logo" class="w-10 h-10">
-      <span class="text-xl md:text-2xl font-bold text-white tracking-tight">EVISAS</span>
+    <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Icon" class="w-10 h-10">
+    <img src="{{ asset('images/EVISAS WHITE1.png') }}" alt="Evisas Text" class="h-5 md:h-5">
     </div>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
-      <a href="/" class="text-white hover:text-blue-400 transition-colors">
-        Home
-      </a>
+      <a href="/" class="text-white hover:text-yellow-400 transition duration-200">Home</a>
 
       <!-- Dropdown -->
       <div @mouseenter="serviceOpen = true" @mouseleave="serviceOpen = false" class="relative">
-        <button class="flex items-center gap-1 text-white hover:text-blue-400 transition-colors">
+        <button class="flex items-center gap-1 text-white hover:text-yellow-400 transition duration-200">
           Our Services
           <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <div x-show="serviceOpen" x-transition
-             class="absolute left-0 mt-3 w-60 bg-[#334155] border border-blue-800 shadow-lg rounded-lg z-50 overflow-hidden">
-          <a href="/landingpage/extention" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visa & Kitas Extension</a>
-          <a href="/landingpage/kitas" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAS</a>
-          <a href="/landingpage/kitap" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">KITAP</a>
-          <a href="/landingpage/visitorvisa" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Visitor Visa</a>
-          <a href="/landingpage/additional" class="block px-5 py-3 text-sm text-white hover:bg-blue-800 hover:text-white">Additional Immigration Services</a>
+        <div x-show="serviceOpen" x-cloak x-transition
+             class="absolute left-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-lg border border-blue-300 z-50 overflow-hidden">
+          <a href="/landingpage/extention" class="block px-5 py-3 hover:bg-blue-100">Visa & Kitas Extension</a>
+          <a href="/landingpage/kitas" class="block px-5 py-3 hover:bg-blue-100">KITAS</a>
+          <a href="/landingpage/kitap" class="block px-5 py-3 hover:bg-blue-100">KITAP</a>
+          <a href="/landingpage/visitorvisa" class="block px-5 py-3 hover:bg-blue-100">Visitor Visa</a>
+          <a href="/landingpage/additional" class="block px-5 py-3 hover:bg-blue-100">Additional Immigration Services</a>
         </div>
       </div>
 
-      <a href="/landingpage/companyprofile" class="text-white hover:text-blue-400 transition-colors">
-        About Us
-      </a>
+      <a href="/landingpage/companyprofile" class="text-white hover:text-yellow-400 transition duration-200">About Us</a>
     </nav>
 
     <!-- Mobile Nav Toggle -->
     <div class="md:hidden relative">
       <button @click="navOpen = !navOpen" class="text-white focus:outline-none transition">
         <svg x-show="!navOpen" class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+             viewBox="0 0 24 24"><path d="M4 6h16M4 12h16M4 18h16" stroke-linecap="round" stroke-linejoin="round"></path></svg>
         <svg x-show="navOpen" x-cloak class="w-6 h-6" fill="none" stroke="currentColor" stroke-width="2"
-             viewBox="0 0 24 24">
-          <path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path>
-        </svg>
+             viewBox="0 0 24 24"><path d="M6 18L18 6M6 6l12 12" stroke-linecap="round" stroke-linejoin="round"></path></svg>
       </button>
 
       <!-- Mobile Menu -->
       <div x-show="navOpen" x-cloak x-transition
-           class="absolute right-0 mt-3 w-64 bg-[#334155] shadow-xl rounded-lg py-4 px-5 z-50 text-sm space-y-3 border border-blue-800">
-        <a href="/" class="block text-white hover:text-blue-400">Home</a>
-
-        <!-- Mobile Dropdown -->
+           class="absolute right-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-xl py-4 px-5 z-50 border border-blue-300 space-y-3 text-sm">
+        <a href="/" class="block hover:text-yellow-500">Home</a>
         <div>
           <button @click="mobileServiceOpen = !mobileServiceOpen"
-                  class="flex justify-between items-center w-full text-white hover:text-blue-400 transition">
+                  class="flex justify-between items-center w-full hover:text-yellow-500">
             Our Services
             <svg class="w-4 h-4 transform transition-transform duration-200"
                  :class="{ 'rotate-180': mobileServiceOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
@@ -88,15 +89,14 @@
             </svg>
           </button>
           <div x-show="mobileServiceOpen" x-transition class="pl-4 mt-2 space-y-2">
-            <a href="/landingpage/extention" class="block text-white hover:text-blue-400">Visa & Kitas Extension</a>
-            <a href="/landingpage/kitas" class="block text-white hover:text-blue-400">KITAS</a>
-            <a href="/landingpage/kitap" class="block text-white hover:text-blue-400">KITAP</a>
-            <a href="/landingpage/visitorvisa" class="block text-white hover:text-blue-400">Visitor Visa</a>
-            <a href="/landingpage/additional" class="block text-white hover:text-blue-400">Additional Immigration Services</a>
+            <a href="/landingpage/extention" class="block hover:text-yellow-500">Visa & Kitas Extension</a>
+            <a href="/landingpage/kitas" class="block hover:text-yellow-500">KITAS</a>
+            <a href="/landingpage/kitap" class="block hover:text-yellow-500">KITAP</a>
+            <a href="/landingpage/visitorvisa" class="block hover:text-yellow-500">Visitor Visa</a>
+            <a href="/landingpage/additional" class="block hover:text-yellow-500">Additional Immigration Services</a>
           </div>
         </div>
-
-        <a href="/landingpage/companyprofile" class="block text-white hover:text-blue-400">About Us</a>
+        <a href="/landingpage/companyprofile" class="block hover:text-yellow-500">About Us</a>
       </div>
     </div>
   </div>
