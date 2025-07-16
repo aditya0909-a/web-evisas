@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - Birth Report</title>
+  <title>Evisas - Eligible Countries for Visa on Arrival</title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
@@ -103,82 +103,75 @@
 </header>
 
 <img src="{{ asset('images/ocean-bali.webp') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
-<section class="py-20 px-6 bg-[url('/images/ocean-bali.webp')] bg-cover bg-center text-white relative mt-[-64px] min-h-[250px]">
+<section class="py-16 px-4 sm:px-6 bg-[url('/images/ocean-bali.webp')] bg-cover bg-center text-white relative mt-[-64px] min-h-[250px]">
 
-  <!-- Overlay semi-transparan gelap -->
+  <!-- Overlay -->
   <div class="absolute inset-0 bg-black/50"></div>
 
   <!-- Konten -->
-  <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
-  <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Birth Report</span>
-  </h2>
-</div>
+  <div class="relative z-10 max-w-6xl mx-auto text-left">
+    <!-- Judul -->
+    <h2 class="text-3xl sm:text-4xl md:text-5xl font-semibold mt-12 sm:mt-16 mb-4 sm:mb-6 pl-2 sm:pl-6">
+      <span class="underline decoration-yellow-500 underline-offset-4">
+        Eligible Countries for Visa on Arrival
+      </span>
+    </h2>
+
+    <!-- Div abu-abu -->
+    <div class="bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-xl mt-6 sm:mt-10 mb-10 px-4 sm:px-6 lg:px-10 py-8 sm:py-10">
+      <div class="max-w-full sm:max-w-5xl mx-auto">
+        <!-- Paragraf -->
+        <p class="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
+          Citizens from the following countries can obtain a
+          <strong class="text-blue-700">Visa on Arrival (VOA)</strong> when entering Indonesia.
+          The visa is valid for <strong class="text-blue-700">30 days</strong> (including day of arrival)
+          and can be extended once for another 30 days.
+        </p>
+
+        <!-- Grid negara -->
+        <div class="bg-gray-100 border border-gray-200 rounded-lg p-4 max-h-72 sm:max-h-96 overflow-y-auto custom-scroll">
+          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-sm sm:text-base text-gray-800">
+            @foreach([
+              'Albania','Argentina','Armenia','Andorra','Australia','Austria','Azerbaijan','Bahrain','Belarus','Belgium',
+              'Brazil','Brunei Darussalam','Bosnia and Herzegovina','Bulgaria','Czech Republic','Chile','Cambodia','Canada','Colombia','Croatia',
+              'Cyprus','China','Denmark','Ecuador','Estonia','Egypt','Finland','France','Guatemala','Germany',
+              'Greece','Hong Kong','Hungary','India','Ireland','Italy','Iceland','Japan','Jordan','Kazakhstan',
+              'Kenya','Kuwait','Laos','Latvia','Liechtenstein','Lithuania','Luxembourg','Maldives','Malaysia','Malta',
+              'Morocco','Mauritius','Mexico','Monaco','Mongolia','Mozambique','Myanmar','Norway','New Zealand','Netherlands',
+              'Oman','Palestine','Papua New Guinea','Peru','Poland','Portugal','Philippines','Qatar','Romania','Russia',
+              'Rwanda','Serbia','Seychelles','South Korea','Singapore','Slovakia','Slovenia','Spain','Suriname','Sweden',
+              'Switzerland','South Africa','Saudi Arabia','Taiwan','Tanzania','Thailand','Timor-Leste','Tunisia','Turkey',
+              'United States','United Kingdom','United Arab Emirates','Uzbekistan','Ukraine','Vatican','Venezuela','Vietnam'
+            ] as $country)
+              <span class="bg-white px-3 py-1 rounded-full shadow-sm hover:bg-blue-100 transition text-center">
+                {{ $country }}
+              </span>
+            @endforeach
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
 </section>
 
-<div class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky text-white text-sm px-4 py-3 md:px-20">
-  <div class="max-w-7xl mx-auto pl-4 md:pl-20">
-    <a href="/" class="hover:underline text-blue-600">Home</a> › 
-    <a href="/landingpage/additional" class="hover:underline text-blue-600">Additional Immigration Services</a> ›
-    <span>Birth Report</span>
-  </div>
-</div>
-
-<div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean.svg') }}')">
-  <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
-
-    <!-- Section: Birth Report -->
-    <div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
-      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">Birth Report</h2>
-      <p class="text-sm text-gray-700 mb-4">
-        A Birth Report (Lapor Lahir) is an official document issued by immigration to record a child’s birth. It is essential for applying for the child’s stay permit and enrolling them in school.
-      </p>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Price</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
-          <li><strong>IDR 500.000</strong> – Regular (14 business days processing time)</li>
-          <li><strong>IDR 1.000.000</strong> – Priority (7 business days processing time)</li>
-        </ul>
-      </div>
-
-      <div class="mb-4">
-        <h3 class="font-semibold">Document Requirements</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
-          <li>Bali visa application form.</li>
-          <li>Parents passport.</li>
-          <li>Child’s passport.</li>
-          <li>Marriage certificate.</li>
-          <li>Birth certificate.</li>
-          <li>Hospital birth declaration.</li>
-        </ul>
-      </div>
-
-      <!-- Buttons -->
-      <div class="flex gap-3 mt-6">
-        <a x-data
-          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Birth Report.\nCould you please assist me with the application process? Thank you!`)"
-          target="_blank"
-          class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-          Apply Now
-        </a>
-      </div>
-    </div>
-
-    <!-- Notes Section -->
-    <div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
-      <h4 class="font-semibold mb-2">NOTE:</h4>
-      <ul class="list-disc pl-6 space-y-1">
-        <li>Please be aware that international bank transfers can take up to 5 business days to clear in Bali.</li>
-        <li>Business days do not include public holidays or weekends.</li>
-        <li>Processing of your application will commence only after the funds have successfully cleared into our account.</li>
-      </ul>
-    </div>
-
-  </div>
-</div>
 
 
+
+
+
+<style>
+  /* Optional: Smooth custom scrollbar */
+  .custom-scroll::-webkit-scrollbar {
+    width: 6px;
+  }
+  .custom-scroll::-webkit-scrollbar-track {
+    background: transparent;
+  }
+  .custom-scroll::-webkit-scrollbar-thumb {
+    background-color: #94a3b8;
+    border-radius: 9999px;
+  }
+</style>
 
   <!-- Footer -->
   <footer class="bg-gradient-to-tr from-sky-900 to-slate-800 text-white py-12 relative z-10">

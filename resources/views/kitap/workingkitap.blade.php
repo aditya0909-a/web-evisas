@@ -102,8 +102,8 @@
   </div>
 </header>
 
-<img src="{{ asset('images/rock.jpg') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
-<section class="py-20 px-6 bg-[url('/images/rock.jpg')] bg-cover bg-center text-white relative mt-[-64px] min-h-[250px]">
+<img src="{{ asset('images/ocean-bali.webp') }}" alt="Preload Background" class="hidden" loading="eager" fetchpriority="high">
+<section class="py-20 px-6 bg-[url('/images/ocean-bali.webp')] bg-cover bg-center text-white relative mt-[-64px] min-h-[250px]">
 
   <!-- Overlay semi-transparan gelap -->
   <div class="absolute inset-0 bg-black/50"></div>
@@ -116,7 +116,7 @@
 </div>
 </section>
 
-<div class="bg-[#021d3a] text-white text-sm px-4 py-3 md:px-20">
+<div class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
     <a href="/" class="hover:underline text-blue-600">Home</a> › 
     <a href="/landingpage/kitap" class="hover:underline text-blue-600">KITAP</a> ›
@@ -124,7 +124,7 @@
   </div>
 </div>
 
-<div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean1.png') }}')">
+<div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean.svg') }}')">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
 
     <!-- Section: Working Kitap -->
@@ -134,7 +134,7 @@
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
         <p class="text-sm text-gray-700 mb-1">
-          <strong>IDR 82,000,000</strong> (included 12-month work permit & 2 years Multiple entry permit) – <strong>Regular – 60 business days processing time</strong>
+          <strong>IDR 45,000,000</strong> (included 12-month work permit & 2 years Multiple entry permit) – <strong>Regular – 60 business days processing time</strong>
         </p>
       </div>
 
@@ -207,25 +207,50 @@
 
 
   <!-- Footer -->
-  <footer class="bg-[#021d3a] text-white py-10">
-    <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
-      <div>
-        <img src="{{ asset('icons/logo.webp') }}" alt="Logo Evisas" class="w-16 mb-4">
-        <p class="text-sm mt-6">With a global network and deep understanding of immigration policies, we are committed to providing efficient and timely solutions.</p>
-        <div class="flex space-x-4 mt-4">
-          <a href="#"><img src="/icons/Facebook.png" alt="Facebook" class="w-6"></a>
-          <a href="#"><img src="/icons/WhatsApp.png" alt="WhatsApp" class="w-6"></a>
-          <a href="#"><img src="/icons/Instagram.png" alt="Instagram" class="w-6"></a>
-        </div>
-      </div>
-      <div>
-        <h4 class="text-xl font-semibold mb-2">Evisas</h4>
-        <p class="text-sm mt-6">Gunung Athena street no38 Lingkungan Banjar Padang Sumbu Klod, Padangsambian, Kec. Denpasar Bar., Kota Denpasar, Bali 80117</p>
-        <p class="text-sm mt-6">WhatsApp: +62 811-3858-165</p>
+  <footer class="bg-gradient-to-tr from-sky-900 to-slate-800 text-white py-12 relative z-10">
+  <div class="max-w-6xl mx-auto px-6 grid grid-cols-1 md:grid-cols-2 gap-6">
+
+    <!-- Kiri: Logo dan Deskripsi -->
+    <div>
+      <img src="{{ asset('icons/logo.png') }}" alt="Logo Evisas" class="w-16 mb-4">
+      <p class="text-sm text-gray-300 leading-relaxed">
+        With a global network and deep understanding of immigration policies, we are committed to providing efficient and timely solutions.
+      </p>
+      <div class="flex space-x-4 mt-6">
+        <a href="https://facebook.com" target="_blank" class="hover:scale-110 transition-transform duration-300">
+          <img src="/icons/Facebook.png" alt="Facebook" class="w-6">
+        </a>
+        <a href="https://wa.me/628113858165" target="_blank" class="hover:scale-110 transition-transform duration-300">
+          <img src="/icons/WhatsApp.png" alt="WhatsApp" class="w-6">
+        </a>
+        <a href="https://instagram.com" target="_blank" class="hover:scale-110 transition-transform duration-300">
+          <img src="/icons/Instagram.png" alt="Instagram" class="w-6">
+        </a>
       </div>
     </div>
-    <p class="text-center text-sm mt-6">&copy; 2024 Evisas Indonesia. All rights reserved.</p>
-  </footer>
+
+    <!-- Kanan: Kontak -->
+    <div>
+      <h4 class="text-xl font-semibold mb-2 text-yellow-400">Evisas Contact</h4>
+      <p class="text-sm text-gray-300 mt-4">
+        Gunung Athena street no.38, Padangsambian, Denpasar Barat, Bali 80117
+      </p>
+      <p class="text-sm mt-4 text-gray-300">
+        WhatsApp:
+        <a href="https://wa.me/628113858165" class="text-blue-300 hover:underline">+62 811-3858-165</a>
+      </p>
+      <p class="text-sm mt-2 text-gray-300">
+        Email:
+        <a href="mailto:cs.evisasbali@gmail.com" class="text-blue-300 hover:underline">cs.evisasbali@gmail.com</a>
+      </p>
+    </div>
+  </div>
+
+  <!-- Copyright -->
+  <div class="text-center text-xs mt-10 border-t border-blue-400 pt-4 text-gray-300">
+    &copy; {{ date('Y') }} Evisas Indonesia. All rights reserved.
+  </div>
+</footer>
 </body>
 
 </html>

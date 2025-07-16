@@ -36,7 +36,6 @@
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
 
     <!-- Logo -->
-    <!-- Logo -->
     <div class="flex items-center gap-3">
   <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Icon" class="w-10 h-10">
   <img src="{{ asset('images/EVISAS WHITE1.png') }}" alt="Evisas Text" class="h-5 md:h-5">
@@ -135,28 +134,6 @@
           <h3 class="text-xl font-semibold text-gray-800">Investor Kitas</h3>
         </div>
         <p class="text-sm text-gray-600 mb-2">The Investor KITAS is available to foreigners wanting to invest or establish a company in Indonesia. This visa allows multiple entries and is valid for, and permits a continuous stay of up to 2 years.</p>
-        <button type="button" class=" text-left text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
-          ➖ Prices
-        </button>
-        <div class="hidden text-sm text-gray-700 mb-4">
-          <p class="font-semibold mb-1">Applying from OUTSIDE Indonesia</p>
-          <p class="ml-2 mb-1 font-medium">2 years visa</p>
-          <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 17,000,000</strong> - Regular <strong>14 business days</strong> processing time.</li>
-            <li><strong>IDR 19,000,000</strong> - Priority <strong>7 business days</strong> processing time.</li>
-          </ul>
-          <p class="font-semibold mb-1">Applying from WITHIN Indonesia</p>
-          <p class="ml-2 mb-1 font-medium">1 year visa</p>
-          <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 20,000,000</strong> - Regular <strong>14 business days</strong> processing time.</li>
-            <li><strong>IDR 22,000,000</strong> - Priority <strong>7 business days</strong> processing time.</li>
-          </ul>
-          <p class="ml-2 mb-1 font-medium">2 years visa</p>
-          <ul class="list-disc ml-6">
-            <li><strong>IDR 25,000,000</strong> - Regular <strong>14 business days</strong> processing time.</li>
-            <li><strong>IDR 27,000,000</strong> - Priority <strong>7 business days</strong> processing time.</li>
-          </ul>
-        </div>
         <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitas/investorkitas" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>
@@ -169,33 +146,6 @@
           <h3 class="text-xl font-semibold text-gray-800">Working Kitas</h3>
         </div>
         <p class="text-sm text-gray-600 mb-2">This KITAS is for foreigners who wish to work and earn money in Bali legally. Single and Multiple entry visa holders can convert this KITAS for up to 1 year, with the validity depending on the job position.</p>
-        <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
-          ➖ Prices
-        </button>
-        <div class="hidden text-sm text-gray-700 mb-4">
-          <p class="font-semibold mb-1">Applying from OUTSIDE Indonesia</p>
-          <p class="ml-2 mb-1 font-medium">6 months</p>
-          <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 15,000,000 + USD 600</strong> for Work permit + <strong>IDR 3,000,000</strong> Work Insurance - Regular</li>
-            <li><strong>IDR 18,000,000 + USD 600</strong> for Work permit + <strong>IDR 3,000,000</strong> Work Insurance - Priority</li>
-          </ul>
-          <p class="ml-2 mb-1 font-medium">1 year</p>
-          <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 17,500,000 + USD 1,200</strong> for Work permit - Regular</li>
-            <li><strong>IDR 21,000,000 + USD 1,200</strong> for Work permit - Priority</li>
-          </ul>
-          <p class="font-semibold mb-1">Applying from WITHIN Indonesia</p>
-          <p class="ml-2 mb-1 font-medium">6 months</p>
-          <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 17,500,000 + USD 600</strong> for Work permit + <strong>IDR 3,000,000</strong> Work Insurance - Regular</li>
-            <li><strong>IDR 20,000,000 + USD 600</strong> for Work permit + <strong>IDR 3,000,000</strong> Work Insurance - Priority</li>
-          </ul>
-          <p class="ml-2 mb-1 font-medium">1 year</p>
-          <ul class="list-disc ml-6">
-            <li><strong>IDR 20,000,000 + USD 1,200</strong> for Work permit - Regular</li>
-            <li><strong>IDR 23,000,000 + USD 1,200</strong> for Work permit - Priority</li>
-          </ul>
-        </div>
         <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitas/workingkitas" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>
@@ -248,21 +198,6 @@
           <h3 class="text-xl font-semibold text-gray-800">Digital Nomad Visa (Remote Worker)</h3>
         </div>
         <p class="text-sm text-gray-600 mb-2">This Digital Nomad visa is designed for remote workers who wish to live in Indonesia while working for foreign companies. This visa is valid for up to 1 year and is renewable.</p>
-        <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
-          ➖ Prices
-        </button>
-        <div class="hidden text-sm text-gray-700 mb-4">
-          <p class="font-semibold mb-1">Applying from OUTSIDE Indonesia</p>
-          <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 12,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 15,000,000</strong> - Priority 7 business days</li>
-          </ul>
-          <p class="font-semibold mb-1">Applying from WITHIN Indonesia</p>
-          <ul class="list-disc ml-6">
-            <li><strong>IDR 16,000,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 19,000,000</strong> - Priority 7 business days</li>
-          </ul>
-        </div>
      <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitas/remoteworker" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>
@@ -278,34 +213,6 @@
         <p class="text-sm text-gray-600 mb-2">
             Dependent family members of KITAS and long-stay visa holders (including Golden and Remote Worker Visas) are allowed to reside in Indonesia as dependents of their sponsoring family member.
         </p>
-        <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
-            ➖ Prices
-        </button>
-        <div class="hidden text-sm text-gray-700 mb-4">
-            <p class="font-semibold mb-1">Applying from OUTSIDE Indonesia</p>
-            <p class="ml-2 mb-1 font-medium">1 year</p>
-            <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 13,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 15,000,000</strong> - Priority 7 business days</li>
-            </ul>
-
-            <p class="font-semibold mb-1">Applying from WITHIN Indonesia</p>
-            <p class="ml-2 mb-1 font-medium">6 months</p>
-            <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 16,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 19,000,000</strong> - Priority 7 business days</li>
-            </ul>
-            <p class="ml-2 mb-1 font-medium">1 year</p>
-            <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 18,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 21,000,000</strong> - Priority 7 business days</li>
-            </ul>
-            <p class="ml-2 mb-1 font-medium">2 years</p>
-            <ul class="list-disc ml-6">
-            <li><strong>IDR 20,000,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 23,000,000</strong> - Priority 7 business days</li>
-            </ul>
-        </div>
         <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitas/familymemberskitas" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>
@@ -320,34 +227,6 @@
         <p class="text-sm text-gray-600 mb-2">
             Family members of Indonesian citizens are permitted to reside in Indonesia as dependents of their sponsoring Indonesian family member.
         </p>
-        <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
-            ➖ Prices
-        </button>
-        <div class="hidden text-sm text-gray-700 mb-4">
-            <p class="font-semibold mb-1">Applying from OUTSIDE Indonesia</p>
-            <p class="ml-2 mb-1 font-medium">1 year</p>
-            <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 13,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 15,000,000</strong> - Priority 7 business days</li>
-            </ul>
-
-            <p class="font-semibold mb-1">Applying from WITHIN Indonesia</p>
-            <p class="ml-2 mb-1 font-medium">6 months</p>
-            <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 16,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 19,000,000</strong> - Priority 7 business days</li>
-            </ul>
-            <p class="ml-2 mb-1 font-medium">1 year</p>
-            <ul class="list-disc ml-6 mb-3">
-            <li><strong>IDR 18,500,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 21,000,000</strong> - Priority 7 business days</li>
-            </ul>
-            <p class="ml-2 mb-1 font-medium">2 years</p>
-            <ul class="list-disc ml-6">
-            <li><strong>IDR 20,000,000</strong> - Regular 14 business days</li>
-            <li><strong>IDR 23,000,000</strong> - Priority 7 business days</li>
-            </ul>
-        </div>
         <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitas/familymembersindonesian" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>
@@ -440,19 +319,6 @@
      This visa is for investors, former Indonesian citizens, or people with special skills. It allows you to stay for 5 or 10 years and you can bring your family too.
     </p>
     
-    <button type="button" class="text-left text-blue-600 text-sm mb-4 focus:outline-none focus:underline" onclick="this.nextElementSibling.classList.toggle('hidden')">
-            ➖ Prices
-        </button>
-        <div class="hidden text-sm text-gray-700 mb-4">
-        <ul class="list-disc pl-6">
-          <li><strong>5 years</strong><br>
-            IDR 35,000,000
-          </li>
-          <li><strong>10 years</strong><br>
-            IDR 50,000,000
-          </li>
-        </ul>
-      </div>
         <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitas/goldenkitas" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
         </div>

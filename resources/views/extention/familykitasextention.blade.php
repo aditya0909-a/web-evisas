@@ -140,9 +140,8 @@
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
         <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>1 year</strong>: <strong>IDR 7,000,000</strong> – Regular 14 business days processing time.</li>
-          <li><strong>2 years</strong>: <strong>IDR 10,000,000</strong> – Regular 14 business days processing time.</li>
-          <li><strong>5 years</strong>: <strong>IDR 18,000,000</strong> – Regular 14 business days processing time.</li>
+          <li><strong>1 year</strong>: <strong>IDR 10,500,000</strong> – Regular 14 business days processing time.</li>
+          <li><strong>2 years</strong>: <strong>IDR 19,000,000</strong> – Regular 14 business days processing time.</li>
         </ul>
       </div>
 

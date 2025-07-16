@@ -136,15 +136,6 @@
         To avoid complications and potential overstay, apply for an extension at least <strong>30 days</strong> before your KITAS expires.
       </p>
 
-      <!-- Price -->
-      <div class="mb-4">
-        <h3 class="font-semibold">Price</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>1 year</strong>: <strong>IDR 12,000,000</strong> – Regular 14 business days processing time.</li>
-          <li><strong>2 years</strong>: <strong>IDR 18,000,000</strong> – Regular 14 business days processing time.</li>
-        </ul>
-      </div>
-
       <!-- Length of Extension -->
       <div class="mb-4">
         <h3 class="font-semibold">Length of Extension</h3>

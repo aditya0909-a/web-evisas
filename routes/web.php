@@ -121,8 +121,8 @@ Route::get('/landingpage/kitas/studentkitas', function () {
     return view('kitas.studentkitas');
 });
 
-Route::get('/landingpage/kitas/exindonesianvisa', function () {
-    return view('kitas.exindonesianvisa');
+Route::get('/landingpage/kitas/exindonesiankitas', function () {
+    return view('kitas.exindonesiankitas');
 });
 
 Route::get('/landingpage/kitas/goldenkitas', function () {
@@ -225,8 +225,8 @@ Route::get('/landingpage/extention/investorkitasextention', function () {
     return view('extention.investorkitasextention');
 });
 
-Route::get('/landingpage/extention/multipleentrytouristbusinessextention', function () {
-    return view('extention.multipleentrytouristbusinessextention');
+Route::get('/landingpage/extention/multipleentrypreinvesmentextention', function () {
+    return view('extention.multipleentrypreinvesmentextention');
 });
 
 Route::get('/landingpage/extention/retirementkitasextention', function () {
@@ -257,18 +257,18 @@ Route::get('/landingpage/additional/addressmutation', function () {
     return view('additional.addressmutation');
 });
 
-Route::get('/landingpage/additional/affidavit', function () {
-    return view('additional.affidavit');
-});
-
-Route::get('/landingpage/additional/birthreport', function () {
-    return view('additional.birthreport');
-});
-
 Route::get('/landingpage/additional/indonesianpassport', function () {
     return view('additional.indonesianpassport');
 });
 
 Route::get('/landingpage/additional/passportmutation', function () {
     return view('additional.passportmutation');
+});
+
+Route::get('/landingpage/eligible-country', function () {
+    return view('eligible-country');
+});
+
+Route::get('/landingpage/eligible-country', function () {
+    return view('eligible-country');
 });

@@ -138,8 +138,8 @@
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
         <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>IDR 950,000</strong> – Regular 5 business days processing time.</li>
-          <li><strong>IDR 1,200,000</strong> – Priority 3 business days processing time.</li>
+          <li><strong>IDR 900,000</strong> – Regular 5 business days processing time.</li>
+          <li><strong>IDR 1,500,000</strong> – Priority 3 business days processing time.</li>
         </ul>
       </div>
 

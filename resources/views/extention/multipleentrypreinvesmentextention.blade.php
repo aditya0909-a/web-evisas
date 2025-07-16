@@ -4,7 +4,7 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Evisas - Affidavit</title>
+  <title>Evisas - Multiple Entry Pre-Investment  </title>
   <script src="https://cdn.tailwindcss.com"></script>
   <script src="https://unpkg.com/alpinejs" defer></script>
   <link rel="icon" href="{{ asset('favicon.ico') }}" type="image/x-icon">
@@ -111,7 +111,7 @@
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-left pl-6">
   <h2 class="text-4xl md:text-5xl mt-16 mb-2">
-    <span class="underline decoration-yellow-500 underline-offset-4">Affidavit</span>
+    <span class="underline decoration-yellow-500 underline-offset-4">Multiple Entry Pre-Investment</span>
   </h2>
 </div>
 </section>
@@ -119,77 +119,138 @@
 <div class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky text-white text-sm px-4 py-3 md:px-20">
   <div class="max-w-7xl mx-auto pl-4 md:pl-20">
     <a href="/" class="hover:underline text-blue-600">Home</a> › 
-    <a href="/landingpage/additional" class="hover:underline text-blue-600">Additional Immigration Services</a> ›
-    <span>Affidavit</span>
+    <a href="/landingpage/extention" class="hover:underline text-blue-600">Extention</a> ›
+    <span>Multiple Entry Pre-Investment</span>
   </div>
 </div>
 
 <div class="bg-cover py-12 overflow-hidden" style="background-image: url('{{ asset('images/patternocean.svg') }}')">
   <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-16">
 
-    <!-- Section: Affidavit -->
+    <!-- Section: Multiple‑Entry Tourist & Business Visa Extension -->
     <div class="bg-white rounded-xl shadow-lg p-6 max-w-3xl mx-auto my-10">
-      <h2 class="text-2xl font-bold text-[#1e293b] mb-2">Affidavit</h2>
+      <h2 class="text-2xl font-bold text-[#1e293b] mb-4">Multiple Entry Pre-Investment Visa Extension</h2>
+
       <p class="text-sm text-gray-700 mb-4">
-        Valid until expiration of foreign passport.
+        This visa extension allows <strong>Tourist and Business Visa holders</strong> to stay in Indonesia for more than 60&nbsp;days.
+        You can extend the visa <strong>twice</strong>, each time for 60&nbsp;days, reaching up to 180&nbsp;days in total.
+        To avoid complications and potential overstay, apply for the extension at least <strong>14 days</strong> before your visa expires.
       </p>
 
+      <!-- Price -->
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
-          <li><strong>IDR 1.000.000</strong> – Regular (14 business days processing time)</li>
-          <li><strong>IDR 2.000.000</strong> – Priority (7 business days processing time)</li>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li><strong>IDR 8,500,000</strong> – 1 Year <strong>14 business&nbsp;days</strong> processing time.</li>
+          <li><strong>IDR 10,500,000</strong> – 2 Years <strong>14 business&nbsp;days</strong> processing time.</li>
         </ul>
       </div>
 
+      <!-- Length of Extension -->
       <div class="mb-4">
-        <h3 class="font-semibold">Document Requirements</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
-          <li>Bali Visa application form.</li>
-          <li>Child’s Indonesian & Foreign Passport.</li>
-          <li>Child’s Identification Card (KIA).</li>
-          <li>Scan of the identity and signature page of the parent's passport (no photos, must be a color scan).</li>
-          <li>Child’s birth certificate or Akte Lahir.</li>
-          <li>Indonesian ID Card (KTP) of parent(s).</li>
-          <li>Family certificate (KK, optional).</li>
-          <li>Marriage certificate of parents.</li>
-        </ul>
+        <h3 class="font-semibold">Length of Extension</h3>
+        <p class="text-sm text-gray-700"><strong>60 days</strong> (extendable ×2, <strong>120 days MAX</strong>)</p>
       </div>
 
+      <!-- Requirements -->
       <div class="mb-4">
-        <h3 class="font-semibold">Renewal</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
-          <li>Renewal needs to be processed within 2–3 weeks before Affidavit expires.</li>
-          <li>All previously required documents must be resubmitted as well as the Affidavit card itself.</li>
+        <h3 class="font-semibold">Requirements</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Apply at least <strong>14 days</strong> before your visa expiry date.</li>
+          <li>Clear picture of your passport ID page (physical passport required for non E‑visa).</li>
+          <li>Copy of flight arrival ticket.</li>
+          <li>Recent colour photograph.</li>
+          <li>Your ITK (e‑Stay Permit).</li>
         </ul>
       </div>
 
-      <!-- Buttons -->
-      <div class="flex gap-3 mt-6">
+      <!-- Processing Stages -->
+      <div class="mb-4">
+        <h3 class="font-semibold">Processing Stages</h3>
+        <ul class="list-disc pl-6 text-sm text-gray-700">
+          <li>Submit the required documents online or visit one of our four offices in Bali.</li>
+          <li>Make payment to Bali Visas via the payment link or at our offices.</li>
+          <li>We’ll notify you within 5–7 days (regular) or 2–3 days (priority) to visit immigration for biometrics.</li>
+          <li>Visit the immigration office for photo & fingerprints.</li>
+          <li>We’ll inform you once the extension is completed after biometrics.</li>
+        </ul>
+      </div>
+
+      <!-- CTA -->
+      <div class="flex gap-2 mt-4">
         <a x-data
-          :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Affidavit.\nCould you please assist me with the application process? Thank you!`)"
-          target="_blank"
-          class="px-4 py-2 bg-blue-600 text-white text-sm rounded hover:bg-blue-700 transition">
-          Apply Now
+           :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Multiple Entry Pre-Investment Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
+           target="_blank"
+           class="px-4 py-2 bg-blue-700 text-white text-sm rounded hover:bg-blue-800 transition">
+           Apply Now
         </a>
       </div>
     </div>
 
-    <!-- Notes Section -->
-    <div class="max-w-3xl mx-auto text-sm text-gray-600 mb-10 px-6">
-      <h4 class="font-semibold mb-2">NOTE:</h4>
-      <ul class="list-disc pl-6 space-y-1">
-        <li>Please be aware that international bank transfers can take up to 5 business days to clear in Bali.</li>
-        <li>Business days do not include public holidays or weekends.</li>
-        <li>Processing of your application will commence only after the funds have successfully cleared into our account.</li>
-      </ul>
+    <!-- FAQ Section -->
+    <div x-data="{ selected: null }" class="max-w-3xl mx-auto mb-10 px-6">
+      <h3 class="text-xl font-semibold mb-4">Frequently Asked Questions</h3>
+
+      <div class="space-y-4">
+        <!-- FAQ 1 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+          <button @click="selected !== 1 ? selected = 1 : selected = null"
+                  class="w-full text-left px-4 py-3 font-semibold text-black-600 hover:bg-gray-50">
+            Q: Can I travel outside of Bali without a passport?
+          </button>
+          <div x-show="selected === 1" x-collapse class="px-4 pb-4 text-sm text-gray-700">
+            A: Yes, you can travel anywhere in Indonesia without a passport if you have a clear picture of your passport and visa stamps with arrival dates. We can also provide you with a sponsorship letter stating that your passport is with immigration upon request.
+          </div>
+        </div>
+
+        <!-- FAQ 2 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+          <button @click="selected !== 2 ? selected = 2 : selected = null"
+                  class="w-full text-left px-4 py-3 font-semibold text-black-600 hover:bg-gray-50">
+            Q: What if my visa expires whilst the passport and visa is in immigration?
+          </button>
+          <div x-show="selected === 2" x-collapse class="px-4 pb-4 text-sm text-gray-700">
+            A: As long as your visa has not expired before it is submitted to immigration, you will not be charged any overstay fee.
+          </div>
+        </div>
+
+        <!-- FAQ 3 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+          <button @click="selected !== 3 ? selected = 3 : selected = null"
+                  class="w-full text-left px-4 py-3 font-semibold text-black-600 hover:bg-gray-50">
+            Q: Will I get my passport back the same day as I do the biometrics?
+          </button>
+          <div x-show="selected === 3" x-collapse class="px-4 pb-4 text-sm text-gray-700">
+            A: No, the process will continue. We will collect your passport and return it to you once it is completed.
+          </div>
+        </div>
+
+        <!-- FAQ 4 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+          <button @click="selected !== 4 ? selected = 4 : selected = null"
+                  class="w-full text-left px-4 py-3 font-semibold text-black-600 hover:bg-gray-50">
+            Q: What is an overstay, and how much does it cost?
+          </button>
+          <div x-show="selected === 4" x-collapse class="px-4 pb-4 text-sm text-gray-700">
+            A: An overstay is when you stay for any length of time over your visa expiry date. Immigration or customs will charge you 1,000,000 IDR for every day you stay longer than your visa allows.
+          </div>
+        </div>
+
+        <!-- FAQ 5 -->
+        <div class="bg-white border border-gray-200 rounded-lg shadow-sm">
+          <button @click="selected !== 5 ? selected = 5 : selected = null"
+                  class="w-full text-left px-4 py-3 font-semibold text-black-600 hover:bg-gray-50">
+            Q: Is my passport safe?
+          </button>
+          <div x-show="selected === 5" x-collapse class="px-4 pb-4 text-sm text-gray-700">
+            A: Absolutely, your passport is safely with immigration during processing.
+          </div>
+        </div>
+      </div>
     </div>
 
   </div>
 </div>
-
-
-
 
   <!-- Footer -->
   <footer class="bg-gradient-to-tr from-sky-900 to-slate-800 text-white py-12 relative z-10">

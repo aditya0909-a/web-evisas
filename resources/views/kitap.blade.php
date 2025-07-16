@@ -36,7 +36,6 @@
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
 
     <!-- Logo -->
-    <!-- Logo -->
     <div class="flex items-center gap-3">
   <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Icon" class="w-10 h-10">
   <img src="{{ asset('images/EVISAS WHITE1.png') }}" alt="Evisas Text" class="h-5 md:h-5">
@@ -134,7 +133,7 @@
     <div>
     <h3 class="text-xl font-bold text-[#1e293b] mb-2">Investor Kitap</h3>
     <p class="text-sm text-gray-600 mb-4">Suitable for foreign investors who have owned shares in an Indonesian company for at least 2 years. It is valid for five years and is extendable for a lifetime.</p>
-    <p class="text-sm mb-4"><strong>IDR 55,000,000</strong> – 60 business days</p>
+    <p class="text-sm mb-4"><strong>IDR 45,000,000</strong> – 60 business days</p>
     </div>
     <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitap/investorkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
@@ -147,7 +146,7 @@
     <div>
     <h3 class="text-xl font-bold text-[#1e293b] mb-2">Working Kitap</h3>
     <p class="text-sm text-gray-600 mb-4">Suitable for foreigners who are employed by and have held a Working KITAS for an Indonesian company for at least two years. This visa is valid for five years and is extendable for a lifetime.</p>
-    <p class="text-sm mb-4"><strong>IDR 60,000,000</strong> (included 12 months work permit & 2 years Multiple entry permit)</p>
+    <p class="text-sm mb-4"><strong>IDR 50,000,000</strong> – 60 business days</p>
     </div>
     <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitap/workingkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
@@ -156,11 +155,11 @@
 
     <!-- Family Kitap -->
     <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-    <img src="/images/KITAP.svg" alt="Family Kitap" class="rounded-xl mb-4 w-full h-40 object-cover">
+    <img src="/images/KITAP.webp" alt="Family Kitap" class="rounded-xl mb-4 w-full h-40 object-cover">
     <div>
     <h3 class="text-xl font-bold text-[#1e293b] mb-2">Family Kitap</h3>
     <p class="text-sm text-gray-600 mb-4">Suitable for foreigners married to Indonesian citizens or children of Indonesian parents. It allows you to stay indefinitely for spouse-sponsored, or those converting from a family KITAS after 2 years.</p>
-    <p class="text-sm mb-4"><strong>IDR 40,000,000</strong> – 60 business days</p>
+    <p class="text-sm mb-4"><strong>IDR 35,000,000</strong> – 60 business days</p>
     </div>
     <div class="mt-auto flex gap-3">
         <a href="/landingpage/kitap/workingkitap" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>

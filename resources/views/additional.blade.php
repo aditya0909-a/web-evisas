@@ -160,28 +160,6 @@
         </div>
         </div>
 
-        <!-- Birth Report -->
-        <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Birth Report</h3>
-        <p class="text-sm text-gray-600 mb-4">
-            A Birth Report (Lapor Lahir) is an official document issued by immigration for newborn children born in Indonesia with at least one parent holding a valid visa.
-        </p>
-        <div class="mt-auto flex gap-3">
-            <a href="/landingpage/additional/birthreport" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
-        </div>
-        </div>
-
-        <!-- Affidavit -->
-        <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Affidavit</h3>
-        <p class="text-sm text-gray-600 mb-4">
-            An Affidavit is an immigration document for children with dual nationality. A foreign passport is combined with their Indonesian and foreign citizenship status.
-        </p>
-        <div class="mt-auto flex gap-3">
-            <a href="/landingpage/additional/affidavit" class="flex-1 px-4 py-2 bg-gray-100 text-sm text-center rounded-lg hover:bg-gray-200 transition">Get Details</a>
-        </div>
-        </div>
-
         <!-- Indonesian Passport -->
         <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">Indonesian Passport</h3>

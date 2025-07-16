@@ -133,8 +133,8 @@
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">E - Visa VOA Extension</h3>
         <p class="text-sm text-gray-600 mb-2">A VOA extension permits an additional 30 days stay from visa expiration, after which another visa is required.</p>
         <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
+          <li><strong>IDR 900,000</strong> – Regular 5 business days</li>
+          <li><strong>IDR 1,500,000</strong> – Priority 3 business days</li>
         </ul>
         <div class="flex gap-2 mt-auto">
           <a href="/landingpage/extention/voaextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
@@ -153,8 +153,7 @@
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">Single Entry Visa Extension</h3>
         <p class="text-sm text-gray-600 mb-2">Applies to Tourist, Business, Social, Humanitarian, or Journalistic visas. Max 2 extensions of 60 days each.</p>
         <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
+          <li><strong>IDR 2,300,000</strong> – Regular 14 business days</li>
         </ul>
         <div class="flex gap-2 mt-auto">
           <a href="/landingpage/extention/singleentryextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
@@ -167,17 +166,18 @@
         </div>
       </div>
 
-      <!-- Multiple Entry Tourist & Business Visa Extension -->
+      <!-- Multiple Entry Pre-Invesment -->
       <div class="bg-white border border-gray-200 rounded-xl shadow-md p-6 hover:shadow-lg transition flex flex-col justify-between">
         <img src="/images/remoteworker-kitas.jpg" alt="Pre Invesment" class="rounded-xl mb-4 w-full h-40 object-cover">
-        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Multiple Entry Tourist & Business Visa Extension</h3>
-        <p class="text-sm text-gray-600 mb-2">Allows additional 60-day stay for tourism or business purposes. Maximize your visit time.</p>
+        <h3 class="text-xl font-bold text-[#1e293b] mb-2">Multiple Entry Pre-Invesment</h3>
+        <p class="text-sm text-gray-600 mb-2">Allows additional stay for pre-invesment. Maximize your visit time.</p>
         <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days</li>
+          <li><strong>IDR 8,500,000</strong> – 14 business days (1 Years)</li>
+          <li><strong>IDR 10,500,000</strong> – 14 business days (2 Years)</li>
         </ul>
+        
         <div class="flex gap-2 mt-auto">
-          <a href="/landingpage/extention/multipleentrytouristbusinessextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
+          <a href="/landingpage/extention/multipleentrypreinvesmentextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
         :href="'https://wa.me/628113858165?text=' + encodeURIComponent(`Hello, I would like to apply for the Multiple Entry Tourist & Business Visa Extension.\nCould you please assist me with the application process? Thank you!`)"
         target="_blank"
@@ -193,17 +193,6 @@
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">Investor KITAS Extension</h3>
         <p class="text-sm text-gray-600 mb-2">Applicable for multiple entry visa and is valid for either 1 or 2 years. Can be extended accordingly.</p>
 
-        <p class="text-sm text-gray-700 mb-1">1 year:</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-2">
-          <li><strong>IDR 12,000,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 14,000,000</strong> – Priority 7 business days</li>
-        </ul>
-
-        <p class="text-sm text-gray-700 mb-1">2 years:</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 20,000,000</strong> – Regular 14 business days</li>
-          <li><strong>IDR 22,000,000</strong> – Priority 7 business days</li>
-        </ul>
         <div class="flex gap-2 mt-auto">
         <a href="/landingpage/extention/investorkitasextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
@@ -221,11 +210,6 @@
         <h3 class="text-xl font-bold text-[#1e293b] mb-2">Working KITAS Extension</h3>
         <p class="text-sm text-gray-600 mb-2">A Working KITAS extension follows the initial KITAS validity period and can be renewed accordingly.</p>
 
-        <p class="text-sm text-gray-700 mb-1">1 year:</p>
-        <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-          <li><strong>IDR 12,000,000</strong> + <strong>USD 600</strong> govt fee for IMTA (Work Permit) – Regular</li>
-          <li><strong>IDR 14,000,000</strong> + <strong>USD 600</strong> govt fee for IMTA (Work Permit) – Priority</li>
-        </ul>
         <div class="flex gap-2 mt-auto">
           <a href="/landingpage/extention/workingkitasextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
@@ -242,18 +226,7 @@
     <img src="/images/familyindonesian-kitas.jpg" alt="Family of Indonesian Citizen" class="rounded-xl mb-4 w-full h-40 object-cover">
     <h3 class="text-xl font-bold text-[#1e293b] mb-2">Family of Indonesian Citizen Extension</h3>
     <p class="text-sm text-gray-600 mb-2">The Kitas for the Family of Indonesian citizens can be extended for one year.</p>
-    <p class="text-sm text-gray-600 mb-2">To avoid complications and potential overstay, apply for your extension at least 30 days before your Kitas expires.</p>
-
-    <p class="text-sm text-gray-700 mb-1"><strong>1 year:</strong></p>
-    <ul class="list-disc pl-5 text-sm text-gray-700 mb-2">
-        <li><strong>IDR 10,000,000</strong> – Regular 14 business days</li>
-    </ul>
-
-    <p class="text-sm text-gray-700 mb-1"><strong>2 years:</strong></p>
-    <ul class="list-disc pl-5 text-sm text-gray-700 mb-4">
-        <li><strong>IDR 18,000,000</strong> – Regular 14 business days</li>
-    </ul>
-
+    
     <div class="flex gap-2 mt-auto">
         <a href="/landingpage/extention/familyindonesianextention" class="px-4 py-2 bg-gray-200 text-sm rounded hover:bg-gray-300 transition">Learn More</a>
         <a x-data
@@ -270,8 +243,7 @@
     <img src="/images/familyholder-kitas.jpg" alt="Family of KITAS Holder" class="rounded-xl mb-4 w-full h-40 object-cover">
     <h3 class="text-xl font-bold text-[#1e293b] mb-2">Family of KITAS holder Extension</h3>
     <p class="text-sm text-gray-600 mb-2">The Family of KITAS holder’s extension follows the sponsoring KITAS validity period.</p>
-    <p class="text-sm text-gray-600 mb-2">To avoid complications and potential overstay, apply for your extension at least 30 days before your Kitas expires.</p>
-
+    
     <p class="text-sm text-gray-700 mb-1"><strong>1 year:</strong></p>
     <ul class="list-disc pl-5 text-sm text-gray-700 mb-2">
         <li><strong>IDR 10,000,000</strong> – Regular 14 business days</li>
@@ -298,8 +270,7 @@
     <img src="/images/retirement-kitas.jpg" alt="Retirement KITAS" class="rounded-xl mb-4 w-full h-40 object-cover">
     <h3 class="text-xl font-bold text-[#1e293b] mb-2">Retirement KITAS Extension</h3>
     <p class="text-sm text-gray-600 mb-2">A Retirement KITAS can be extended according to the initial KITAS validity period.</p>
-    <p class="text-sm text-gray-600 mb-2">To avoid complications and potential overstay, apply for your extension at least 30 days before your Kitas expires.</p>
-
+    
     <p class="text-sm text-gray-700 mb-1"><strong>1 year:</strong></p>
     <ul class="list-disc pl-5 text-sm text-gray-700 mb-2">
         <li><strong>IDR 10,000,000</strong> – Regular 14 business days</li>

@@ -133,7 +133,7 @@
 
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
-        <p class="text-sm text-gray-700"><strong>IDR 2.000.000</strong> – Up to 7 business days processing time.</p>
+        <p class="text-sm text-gray-700"><strong>IDR 3.000.000</strong> – Up to 7 business days processing time.</p>
       </div>
 
       <div class="mb-4">

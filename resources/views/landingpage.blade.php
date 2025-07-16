@@ -106,11 +106,53 @@
 
 <section class="relative w-full min-h-screen text-white overflow-hidden mt-[-64px]">
   <!-- Background Image -->
-<div class="fixed top-0 left-0 w-full h-full bg-cover bg-center z-0 pointer-events-none" style="background-image: url('/images/ocean-bali.webp');"></div>
+<!-- Dua layer untuk efek crossfade -->
+<div id="slideshow1" class="fixed top-0 left-0 w-full h-full bg-cover bg-center z-0 transition-opacity duration-1000 pointer-events-none opacity-100" style="background-image: url('/images/ocean-bali.webp');"></div>
+<div id="slideshow2" class="fixed top-0 left-0 w-full h-full bg-cover bg-center z-0 transition-opacity duration-1000 pointer-events-none opacity-0"></div>
 
+<script>
+  const images = [
+    "/images/ocean-bali.webp",
+    "/images/Slide-5.webp",
+    "/images/Slide-6.webp",
+    "/images/Slide-7.webp",
+    "/images/Slide-8.webp",
+    "/images/Slide-9.webp",
+    "/images/ricefield-ubud.webp"
+  ];
+
+  let index = 0;
+  let isFirst = true;
+
+  const slide1 = document.getElementById("slideshow1");
+  const slide2 = document.getElementById("slideshow2");
+
+  setInterval(() => {
+    const nextImage = images[(index + 1) % images.length];
+
+    if (isFirst) {
+      slide2.style.backgroundImage = `url('${nextImage}')`;
+      slide2.classList.remove("opacity-0");
+      slide2.classList.add("opacity-100");
+
+      slide1.classList.remove("opacity-100");
+      slide1.classList.add("opacity-0");
+    } else {
+      slide1.style.backgroundImage = `url('${nextImage}')`;
+      slide1.classList.remove("opacity-0");
+      slide1.classList.add("opacity-100");
+
+      slide2.classList.remove("opacity-100");
+      slide2.classList.add("opacity-0");
+    }
+
+    isFirst = !isFirst;
+    index = (index + 1) % images.length;
+  }, 5000); // Ganti gambar tiap 5 detik
+</script>
 
   <!-- Overlay -->
-  <div class="absolute inset-0 bg-black/60 z-10"></div>
+  <div class="absolute inset-0 bg-black/40 z-10"></div>
 
   <!-- Content -->
   <div class="relative z-20 flex items-center justify-center min-h-screen px-6 text-center">
@@ -176,7 +218,7 @@
 
       <!-- Slide 1 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <img src="{{ asset('images/visitor.svg') }}" alt="VisitorVisa" class="w-full md:max-w-md object-cover" />
+        <img src="{{ asset('images/visitor.webp') }}" alt="VisitorVisa" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
           <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
           <h2 class="text-3xl font-bold mb-2">Visitor Visa</h2>
@@ -189,7 +231,7 @@
 
       <!-- Slide 2 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <img src="{{ asset('images/KITAS.svg') }}" alt="KITAS" class="w-full md:max-w-md object-cover" />
+        <img src="{{ asset('images/KITAS.webp') }}" alt="KITAS" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
           <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
           <h2 class="text-3xl font-bold mb-2">KITAS</h2>
@@ -202,7 +244,7 @@
 
       <!-- Slide 3 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <img src="{{ asset('images/KITAP.svg') }}" alt="KITAP" class="w-full md:max-w-md object-cover" />
+        <img src="{{ asset('images/KITAP.webp') }}" alt="KITAP" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
           <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
           <h2 class="text-3xl font-bold mb-2">KITAP</h2>
@@ -215,7 +257,7 @@
 
       <!-- Slide 4 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <img src="{{ asset('images/EXTENTION.svg') }}" alt="Visa Extension" class="w-full md:max-w-md object-cover" />
+        <img src="{{ asset('images/EXTENTION.webp') }}" alt="Visa Extension" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
           <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
           <h2 class="text-3xl font-bold mb-2">Visa Extension</h2>
@@ -228,7 +270,7 @@
 
       <!-- Slide 5 -->
       <div class="min-w-full flex flex-col md:flex-row items-center gap-6 md:gap-10">
-        <img src="{{ asset('images/ADDITIONAL.svg') }}" alt="Additional Services" class="w-full md:max-w-md object-cover" />
+        <img src="{{ asset('images/ADDITIONAL.webp') }}" alt="Additional Services" class="w-full md:max-w-md object-cover" />
         <div class="w-full md:w-1/2 px-4 sm:px-6 lg:px-8">
 
           <h3 class="text-sm pt-2 text-blue-600 font-bold mb-2">VISA SERVICES</h3>
@@ -294,7 +336,7 @@
 <section class="py-20 px-6 text-white relative">
 
   <!-- Overlay semi-transparan gelap -->
-  <div class="absolute inset-0 bg-black/50"></div>
+  <div class="absolute inset-0 bg-black/40"></div>
 
   <!-- Konten -->
   <div class="relative z-10 max-w-6xl mx-auto text-center relative z-10">
@@ -361,23 +403,23 @@
 
     <!-- Testimoni 1 -->
     <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
-    <img src="{{ asset('images/testi1.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+    <img src="{{ asset('images/testi1.png') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
 
     <!-- Testimoni 2 -->
     <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
-    <img src="{{ asset('images/testi2.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+    <img src="{{ asset('images/testi2.png') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
     <!-- Testimoni 3 -->
     <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
-    <img src="{{ asset('images/testi3.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+    <img src="{{ asset('images/testi3.png') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
     <!-- Testimoni 4 -->
     <div class="group bg-white border border-gray-200 rounded-lg shadow-sm overflow-hidden transition-transform duration-300 hover:scale-105">
-    <img src="{{ asset('images/testi4.jpg') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
+    <img src="{{ asset('images/testi4.png') }}" alt="Review Screenshot 1" class="w-full h-auto object-cover group-hover:scale-105 transition-transform duration-300">
     </div>
 
   </div>

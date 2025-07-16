@@ -136,10 +136,7 @@
       <div class="mb-4">
         <h3 class="font-semibold">Price</h3>
         <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>IDR 1,800,000</strong> – Regular 14 business days processing time for stay <strong>60 days</strong>.</li>
-          <li><strong>IDR 2,000,000</strong> – Priority 7 business days processing time for stay <strong>60 days</strong>.</li>
-          <li><strong>IDR 3,800,000</strong> – Regular 14 business days processing time for stay <strong>180 days</strong>.</li>
-          <li><strong>IDR 4,000,000</strong> – Priority 7 business days processing time for stay <strong>180 days</strong>.</li>
+          <li><strong>IDR 2,300,000</strong> – 14 business days processing time for stay 60 days <strong>( C1, C2, C6 )</strong>.</li>
         </ul>
       </div>
 

@@ -135,13 +135,11 @@
         <h3 class="font-semibold">Price</h3>
         <p class="text-sm font-semibold mb-1 text-gray-800">Same immigration office (Bali area):</p>
         <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1 mb-3">
-          <li><strong>IDR 500.000</strong> – Regular (14 business days processing time)</li>
-          <li><strong>IDR 650.000</strong> – Priority (7 business days processing time)</li>
+          <li><strong>IDR 1.000.000</strong> – Regular (14 business days processing time)</li>
         </ul>
         <p class="text-sm font-semibold mb-1 text-gray-800">To other immigration office (Not Bali area):</p>
         <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
-          <li><strong>IDR 1.000.000</strong> – Regular (14 business days processing time)</li>
-          <li><strong>IDR 1.500.000</strong> – Priority (7 business days processing time)</li>
+          <li><strong>IDR 1.500.000</strong> – Regular (14 business days processing time)</li>
         </ul>
       </div>
 

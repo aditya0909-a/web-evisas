@@ -136,14 +136,6 @@
         To avoid complications and potential overstay, apply for your extension at least <strong>30 days</strong> before your KITAS expires.
       </p>
 
-      <!-- Price -->
-      <div class="mb-4">
-        <h3 class="font-semibold">Price</h3>
-        <ul class="list-disc pl-6 text-sm text-gray-700">
-          <li><strong>1 year</strong>: <strong>IDR 16,000,000</strong> + <strong>USD 600</strong> per month for KITAS (Work Permit) – Regular 14 business days processing time.</li>
-        </ul>
-      </div>
-
       <!-- Length of Extension -->
       <div class="mb-4">
         <h3 class="font-semibold">Length of Extension</h3>

@@ -135,13 +135,12 @@
         <h3 class="font-semibold">Price</h3>
         <p class="text-sm font-semibold text-gray-800">E-passport (with biometric data chip)</p>
         <ul class="list-disc pl-6 text-sm text-gray-700 mb-3 space-y-1">
-          <li><strong>IDR 1.600.000</strong> – Regular</li>
-          <li><strong>IDR 2.000.000</strong> – Priority (count the day of biometrics)</li>
+          <li><strong>IDR 1.900.000</strong> – Regular</li>
+          <li><strong>IDR 2.500.000</strong> – Priority (count the day of biometrics)</li>
         </ul>
         <p class="text-sm font-semibold text-gray-800">Non E-passport</p>
         <ul class="list-disc pl-6 text-sm text-gray-700 space-y-1">
           <li><strong>IDR 1.200.000</strong> – Regular</li>
-          <li><strong>IDR 1.500.000</strong> – Priority (count the day of biometrics)</li>
         </ul>
       </div>
 
