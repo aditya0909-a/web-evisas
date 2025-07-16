@@ -113,12 +113,9 @@
 <script>
   const images = [
     "/images/ocean-bali.webp",
-    "/images/Slide-5.webp",
+    "/images/Slide-2.webp",
     "/images/Slide-6.webp",
-    "/images/Slide-7.webp",
-    "/images/Slide-8.webp",
-    "/images/Slide-9.webp",
-    "/images/ricefield-ubud.webp"
+    "/images/Slide-7.webp"
   ];
 
   let index = 0;
