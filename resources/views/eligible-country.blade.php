@@ -117,40 +117,55 @@
       </span>
     </h2>
 
-    <!-- Div abu-abu -->
-    <div class="bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-xl mt-6 sm:mt-10 mb-10 px-4 sm:px-6 lg:px-10 py-8 sm:py-10">
-      <div class="max-w-full sm:max-w-5xl mx-auto">
-        <!-- Paragraf -->
-        <p class="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
-          Citizens from the following countries can obtain a
-          <strong class="text-blue-700">Visa on Arrival (VOA)</strong> when entering Indonesia.
-          The visa is valid for <strong class="text-blue-700">30 days</strong> (including day of arrival)
-          and can be extended once for another 30 days.
-        </p>
+<div x-data="{
+      search: '',
+      countries: [
+        'Albania','Argentina','Armenia','Andorra','Australia','Austria','Azerbaijan','Bahrain','Belarus','Belgium',
+        'Brazil','Brunei Darussalam','Bosnia and Herzegovina','Bulgaria','Czech Republic','Chile','Cambodia','Canada','Colombia','Croatia',
+        'Cyprus','China','Denmark','Ecuador','Estonia','Egypt','Finland','France','Guatemala','Germany',
+        'Greece','Hong Kong','Hungary','India','Ireland','Italy','Iceland','Japan','Jordan','Kazakhstan',
+        'Kenya','Kuwait','Laos','Latvia','Liechtenstein','Lithuania','Luxembourg','Maldives','Malaysia','Malta',
+        'Morocco','Mauritius','Mexico','Monaco','Mongolia','Mozambique','Myanmar','Norway','New Zealand','Netherlands',
+        'Oman','Palestine','Papua New Guinea','Peru','Poland','Portugal','Philippines','Qatar','Romania','Russia',
+        'Rwanda','Serbia','Seychelles','South Korea','Singapore','Slovakia','Slovenia','Spain','Suriname','Sweden',
+        'Switzerland','South Africa','Saudi Arabia','Taiwan','Tanzania','Thailand','Timor-Leste','Tunisia','Turkey',
+        'United States','United Kingdom','United Arab Emirates','Uzbekistan','Ukraine','Vatican','Venezuela','Vietnam'
+      ]
+    }"
+    class="bg-white bg-opacity-90 backdrop-blur-md shadow-xl rounded-xl mt-6 sm:mt-10 mb-10 px-4 sm:px-6 lg:px-10 py-8 sm:py-10"
+>
+  <div class="max-w-full sm:max-w-5xl mx-auto">
+    <!-- Paragraf -->
+    <p class="text-sm sm:text-base text-gray-700 mb-6 leading-relaxed">
+      Citizens from the following countries can obtain a
+      <strong class="text-blue-700">Visa on Arrival (VOA)</strong> when entering Indonesia.
+      The visa is valid for <strong class="text-blue-700">30 days</strong> (including day of arrival)
+      and can be extended once for another 30 days.
+    </p>
 
-        <!-- Grid negara -->
-        <div class="bg-gray-100 border border-gray-200 rounded-lg p-4 max-h-72 sm:max-h-96 overflow-y-auto custom-scroll">
-          <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-sm sm:text-base text-gray-800">
-            @foreach([
-              'Albania','Argentina','Armenia','Andorra','Australia','Austria','Azerbaijan','Bahrain','Belarus','Belgium',
-              'Brazil','Brunei Darussalam','Bosnia and Herzegovina','Bulgaria','Czech Republic','Chile','Cambodia','Canada','Colombia','Croatia',
-              'Cyprus','China','Denmark','Ecuador','Estonia','Egypt','Finland','France','Guatemala','Germany',
-              'Greece','Hong Kong','Hungary','India','Ireland','Italy','Iceland','Japan','Jordan','Kazakhstan',
-              'Kenya','Kuwait','Laos','Latvia','Liechtenstein','Lithuania','Luxembourg','Maldives','Malaysia','Malta',
-              'Morocco','Mauritius','Mexico','Monaco','Mongolia','Mozambique','Myanmar','Norway','New Zealand','Netherlands',
-              'Oman','Palestine','Papua New Guinea','Peru','Poland','Portugal','Philippines','Qatar','Romania','Russia',
-              'Rwanda','Serbia','Seychelles','South Korea','Singapore','Slovakia','Slovenia','Spain','Suriname','Sweden',
-              'Switzerland','South Africa','Saudi Arabia','Taiwan','Tanzania','Thailand','Timor-Leste','Tunisia','Turkey',
-              'United States','United Kingdom','United Arab Emirates','Uzbekistan','Ukraine','Vatican','Venezuela','Vietnam'
-            ] as $country)
-              <span class="bg-white px-3 py-1 rounded-full shadow-sm hover:bg-blue-100 transition text-center">
-                {{ $country }}
-              </span>
-            @endforeach
-          </div>
-        </div>
+    <!-- Search Bar -->
+    <div class="mb-4">
+      <input
+      type="text"
+      x-model="search"
+      placeholder="Search country..."
+      class="w-full sm:w-1/2 px-4 py-2 border border-gray-300 rounded-lg shadow-sm focus:outline-none focus:ring focus:border-blue-300 text-gray-800"
+      />
+    </div>
+
+    <!-- Grid negara -->
+    <div class="bg-gray-100 border border-gray-200 rounded-lg p-4 max-h-72 sm:max-h-96 overflow-y-auto custom-scroll">
+      <div class="grid grid-cols-2 sm:grid-cols-3 md:grid-cols-4 gap-2 text-sm sm:text-base text-gray-800">
+        <template x-for="country in countries.filter(c => c.toLowerCase().includes(search.toLowerCase()))" :key="country">
+          <span class="bg-white px-3 py-1 rounded-full shadow-sm hover:bg-blue-100 transition text-center">
+            <span x-text="country"></span>
+          </span>
+        </template>
       </div>
     </div>
+  </div>
+</div>
+
   </div>
 </section>
 
