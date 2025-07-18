@@ -272,3 +272,51 @@ Route::get('/landingpage/eligible-country', function () {
 Route::get('/landingpage/eligible-country', function () {
     return view('eligible-country');
 });
+
+Route::get('/landingpage/businesssetup', function () {
+    return view('businesssetup');
+});
+
+Route::get('/landingpage/businesssetup/newpma', function () {
+    return view('businesssetup.newpma');
+});
+
+Route::get('/landingpage/businesssetup/newpt', function () {
+    return view('businesssetup.newpt');
+});
+
+Route::get('/landingpage/businesssetup/newcv', function () {
+    return view('businesssetup.newcv');
+});
+
+Route::get('/landingpage/businesssetup/individualinvesment', function () {
+    return view('businesssetup.individualinvesment');
+});
+
+Route::get('/landingpage/businesssetup/changepma', function () {
+    return view('businesssetup.changepma');
+});
+
+Route::get('/landingpage/businesssetup/changept', function () {
+    return view('businesssetup.changept');
+});
+
+Route::get('/landingpage/businesssetup/closepma', function () {
+    return view('businesssetup.closepma');
+});
+
+Route::get('/landingpage/legaldocument', function () {
+    return view('legaldocument');
+});
+
+Route::get('/landingpage/legaldocument/domicileletter', function () {
+    return view('legaldocument.domicileletter');
+});
+
+Route::get('/landingpage/legaldocument/sktt', function () {
+    return view('legaldocument.sktt');
+});
+
+Route::get('/landingpage/legaldocument/npwp', function () {
+    return view('legaldocument.npwp');
+});

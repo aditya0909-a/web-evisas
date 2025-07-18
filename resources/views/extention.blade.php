@@ -32,34 +32,49 @@
 <body class="bg-white text-gray-800">
   <!-- Header -->
   <header class="bg-gradient-to-r from-sky-900 to-blue-700 shadow-lg sticky top-0 z-50 backdrop-blur-md"
-        x-data="{ navOpen: false, serviceOpen: false, mobileServiceOpen: false }">
+        x-data="{ navOpen: false, visaOpen: false, legalOpen: false, mobileVisaOpen: false, mobileLegalOpen: false }">
   <div class="max-w-7xl mx-auto flex justify-between items-center py-4 px-6 md:px-12">
 
     <!-- Logo -->
     <div class="flex items-center gap-3">
-  <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Icon" class="w-10 h-10">
-  <img src="{{ asset('images/EVISAS WHITE1.png') }}" alt="Evisas Text" class="h-5 md:h-5">
-  </div>
+      <img src="{{ asset('icons/logo.webp') }}" alt="Evisas Icon" class="w-10 h-10">
+      <img src="{{ asset('images/EVISAS WHITE1.png') }}" alt="Evisas Text" class="h-5 md:h-5">
+    </div>
 
     <!-- Desktop Navigation -->
     <nav class="hidden md:flex items-center space-x-8 text-sm font-semibold">
       <a href="/" class="text-white hover:text-yellow-400 transition duration-200">Home</a>
 
-      <!-- Dropdown -->
-      <div @mouseenter="serviceOpen = true" @mouseleave="serviceOpen = false" class="relative">
+      <!-- Visa Services Dropdown -->
+      <div @mouseenter="visaOpen = true" @mouseleave="visaOpen = false" class="relative">
         <button class="flex items-center gap-1 text-white hover:text-yellow-400 transition duration-200">
-          Our Services
+          Visa Services
           <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
             <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
           </svg>
         </button>
-        <div x-show="serviceOpen" x-cloak x-transition
+        <div x-show="visaOpen" x-cloak x-transition
              class="absolute left-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-lg border border-blue-300 z-50 overflow-hidden">
           <a href="/landingpage/extention" class="block px-5 py-3 hover:bg-blue-100">Visa & Kitas Extension</a>
           <a href="/landingpage/kitas" class="block px-5 py-3 hover:bg-blue-100">KITAS</a>
           <a href="/landingpage/kitap" class="block px-5 py-3 hover:bg-blue-100">KITAP</a>
           <a href="/landingpage/visitorvisa" class="block px-5 py-3 hover:bg-blue-100">Visitor Visa</a>
           <a href="/landingpage/additional" class="block px-5 py-3 hover:bg-blue-100">Additional Immigration Services</a>
+        </div>
+      </div>
+
+      <!-- Legal Services Dropdown -->
+      <div @mouseenter="legalOpen = true" @mouseleave="legalOpen = false" class="relative">
+        <button class="flex items-center gap-1 text-white hover:text-yellow-400 transition duration-200">
+          Legal Services
+          <svg class="w-4 h-4 mt-0.5" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+            <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+          </svg>
+        </button>
+        <div x-show="legalOpen" x-cloak x-transition
+             class="absolute left-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-lg border border-blue-300 z-50 overflow-hidden">
+          <a href="/landingpage/businesssetup" class="block px-5 py-3 hover:bg-blue-100">Business Setup</a>
+          <a href="/landingpage/legaldocument" class="block px-5 py-3 hover:bg-blue-100">Legal Document</a>
         </div>
       </div>
 
@@ -79,16 +94,18 @@
       <div x-show="navOpen" x-cloak x-transition
            class="absolute right-0 mt-3 w-64 bg-white text-gray-800 rounded-lg shadow-xl py-4 px-5 z-50 border border-blue-300 space-y-3 text-sm">
         <a href="/" class="block hover:text-yellow-500">Home</a>
+
+        <!-- Mobile Visa Services -->
         <div>
-          <button @click="mobileServiceOpen = !mobileServiceOpen"
+          <button @click="mobileVisaOpen = !mobileVisaOpen"
                   class="flex justify-between items-center w-full hover:text-yellow-500">
-            Our Services
+            Visa Services
             <svg class="w-4 h-4 transform transition-transform duration-200"
-                 :class="{ 'rotate-180': mobileServiceOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+                 :class="{ 'rotate-180': mobileVisaOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
               <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
             </svg>
           </button>
-          <div x-show="mobileServiceOpen" x-transition class="pl-4 mt-2 space-y-2">
+          <div x-show="mobileVisaOpen" x-cloak x-transition class="pl-4 mt-2 space-y-2">
             <a href="/landingpage/extention" class="block hover:text-yellow-500">Visa & Kitas Extension</a>
             <a href="/landingpage/kitas" class="block hover:text-yellow-500">KITAS</a>
             <a href="/landingpage/kitap" class="block hover:text-yellow-500">KITAP</a>
@@ -96,6 +113,23 @@
             <a href="/landingpage/additional" class="block hover:text-yellow-500">Additional Immigration Services</a>
           </div>
         </div>
+
+        <!-- Mobile Legal Services -->
+        <div>
+          <button @click="mobileLegalOpen = !mobileLegalOpen"
+                  class="flex justify-between items-center w-full hover:text-yellow-500">
+            Legal Services
+            <svg class="w-4 h-4 transform transition-transform duration-200"
+                 :class="{ 'rotate-180': mobileLegalOpen }" fill="none" stroke="currentColor" viewBox="0 0 24 24">
+              <path d="M19 9l-7 7-7-7" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" />
+            </svg>
+          </button>
+          <div x-show="mobileLegalOpen" x-cloak x-transition class="pl-4 mt-2 space-y-2">
+            <a href="/landingpage/businesssetup" class="block hover:text-yellow-500">Business Setup</a>
+            <a href="/landingpage/legaldocument" class="block hover:text-yellow-500">Legal Document</a>
+          </div>
+        </div>
+
         <a href="/landingpage/companyprofile" class="block hover:text-yellow-500">About Us</a>
       </div>
     </div>
